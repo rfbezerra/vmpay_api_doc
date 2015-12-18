@@ -43,5 +43,7 @@ Resources disponíveis:
    :maxdepth: 2
 
    category
+   machine_manufacturer
+   machine_model
    manufacturer
    product
