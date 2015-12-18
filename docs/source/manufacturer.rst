@@ -32,7 +32,20 @@ Request::
       }
     }
 
-*manufacturer* é obrigatório.
+Campos
+------
+
+Obrigatórios
+^^^^^^^^^^^^
+
+*manufacturer*
+
+*name*: Nome do fabricante.
+
+Opcionais:
+^^^^^^^^^^
+
+Nenhum.
 
 Atualizar
 =========
@@ -49,7 +62,20 @@ Request::
       }
     }
 
-*manufacturer* é obrigatório.
+Campos
+------
+
+Obrigatórios
+^^^^^^^^^^^^
+
+*manufacturer*
+
+*name*: Nome do fabricante.
+
+Opcionais:
+^^^^^^^^^^
+
+Nenhum.
 
 Excluir
 =======
