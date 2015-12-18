@@ -32,7 +32,20 @@ Request::
       }
     }
 
-*category* é obrigatório.
+Campos
+------
+
+Obrigatórios
+^^^^^^^^^^^^
+
+*category*
+
+*name*: Nome da categoria.
+
+Opcionais:
+^^^^^^^^^^
+
+Nenhum.
 
 Atualizar
 =========
@@ -49,7 +62,20 @@ Request::
       }
     }
 
-*category* é obrigatório.
+Campos
+------
+
+Obrigatórios
+^^^^^^^^^^^^
+
+*category*
+
+*name*: Nome da categoria.
+
+Opcionais:
+^^^^^^^^^^
+
+Nenhum.
 
 Excluir
 =======
