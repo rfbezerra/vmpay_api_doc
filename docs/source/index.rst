@@ -1,5 +1,3 @@
-.. image:: images/vmpay_logo.svg
-
 #########
 API VMPay
 #########
