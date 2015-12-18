@@ -45,5 +45,6 @@ Resources disponíveis:
    category
    machine_manufacturer
    machine_model
+   machine_type
    manufacturer
    product
