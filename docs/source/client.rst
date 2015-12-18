@@ -81,17 +81,17 @@ Atualizar
 Request::
 
     {
-      "category": {
-        "name": "Refrigerantes"
+      "client": {
+        "name": "Novo nome"
       }
     }
 
 Campos
 ------
 
-*category* é obrigatório.
+*client* é obrigatório.
 
-Todos os demais campos são opcionais.
+Pelo menos um campo deve ser passado.
 
 Excluir
 =======

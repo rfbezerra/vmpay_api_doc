@@ -44,6 +44,7 @@ Resources disponíveis:
 
    category
    client
+   location
    machine_manufacturer
    machine_model
    machine_type
