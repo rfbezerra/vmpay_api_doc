@@ -48,5 +48,6 @@ Resources disponíveis:
    machine_manufacturer
    machine_model
    machine_type
+   machine
    manufacturer
    product
