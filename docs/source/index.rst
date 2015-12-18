@@ -43,6 +43,7 @@ Resources disponíveis:
    :maxdepth: 2
 
    category
+   client
    machine_manufacturer
    machine_model
    machine_type
