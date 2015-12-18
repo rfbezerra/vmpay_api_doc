@@ -28,15 +28,15 @@ Request::
 
         {
           "location": {
-            "name": "Jedi Council",
+            "name": "Nome do local",
             "phone": "41-9999-8888",
-            "street": "of rage",
+            "street": "Rua das Flores",
             "number": "123",
-            "complement": "ap 1",
-            "neighborhood": "south central",
-            "city": "Los Angeles",
+            "complement": "loja 1",
+            "neighborhood": "Centro",
+            "city": "Curitiba",
             "state": "PR",
-            "zip_code": "90210"
+            "zip_code": "80140110"
           }
         }
 
