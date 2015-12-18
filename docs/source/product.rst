@@ -81,7 +81,7 @@ Campos
 Proibidos:
 ^^^^^^^^^^
 
-*type*: Este parâmetro não é passado na atualização· Caso esteja
+*type*: Este parâmetro não é passado na atualização. Caso esteja
 presente, a request retornará um erro 400.
 
 Obrigatórios
