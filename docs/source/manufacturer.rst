@@ -1,24 +1,24 @@
-##########
+###########
 Fabricantes
-##########
+###########
 
-Listar fabricantes
-=================
+Listar
+======
 
 ::
 
     GET /api/v1/manufacturers
 
 
-Ver um fabricante
-=================
+Ver
+===
 
 ::
 
     GET /api/v1/manufacturers/[id]
 
-Criar um fabricante
-===================
+Criar
+=====
 
 ::
 
@@ -34,8 +34,8 @@ Request::
 
 *manufacturer* é obrigatório.
 
-Atualizar um fabricante
-=======================
+Atualizar
+=========
 
 ::
 
@@ -51,9 +51,9 @@ Request::
 
 *manufacturer* é obrigatório.
 
-Excluir uma fabricante
-=====================
+Excluir
+=======
 
 ::
 
-DELETE /v1/manufacturers/[id]
+    DELETE /v1/manufacturers/[id]

@@ -2,23 +2,23 @@
 Categorias
 ##########
 
-Listar categorias
-=================
+Listar
+======
 
 ::
 
     GET /api/v1/categories
 
 
-Ver uma categoria
-=================
+Ver
+===
 
 ::
 
     GET /api/v1/categories/[id]
 
-Criar uma categoria
-===================
+Criar
+=====
 
 ::
 
@@ -34,8 +34,8 @@ Request::
 
 *category* é obrigatório.
 
-Atualizar uma categoria
-=======================
+Atualizar
+=========
 
 ::
 
@@ -51,9 +51,9 @@ Request::
 
 *category* é obrigatório.
 
-Excluir uma categoria
-=====================
+Excluir
+=======
 
 ::
 
-DELETE /v1/categories/[id]
+    DELETE /v1/categories/[id]
