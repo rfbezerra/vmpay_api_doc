@@ -36,10 +36,26 @@ Request::
       }
     }
 
-*vendible* é obrigatório.
+Campos
+------
 
-*type* é obrigatório e deve sempre ser 'Product'. Se for outro valor, ou
-o parâmetro 'type' estiver ausente, a request retornará um erro 400.
+Obrigatórios
+^^^^^^^^^^^^
+
+*vendible*
+
+*name*: Nome do produto.
+
+*type*: valor deve ser sempre *Product*.
+
+Opcionais:
+^^^^^^^^^^
+
+*manufacturer_id*: id do fabricante
+
+*category_id*: id da categoria
+
+*upc_code*: código do produto
 
 Atualizar
 =========
@@ -59,11 +75,21 @@ Request::
       }
     }
 
-*vendible* é obrigatório.
+Campos
+------
 
-Ao contrário da criação do produto, **ao atualizar não se passa o
-parâmetro type**. Caso esteja presente, a request retornará um erro 400.
+Proibidos:
+^^^^^^^^^^
 
+*type*: Este parâmetro não é passado na atualização· Caso esteja
+presente, a request retornará um erro 400.
+
+Obrigatórios
+^^^^^^^^^^^^
+
+*vendible*
+
+Pelo menos um campo deve ser passado.
 
 Excluir
 =======
