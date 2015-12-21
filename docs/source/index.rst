@@ -36,6 +36,14 @@ Códigos de retorno e seus significados:
 * 401: unauthorized, tentativa de alterar/excluir uma categoria de outro operador
 * 422: Erro ao criar, nome já está em uso
 
+Exemplo de uso
+==============
+
+Um exemplo de código em linguagem Python para acessar a API do VMPay está
+disponível no `repositório da Verti no github`_.
+
+.. _repositório da Verti no github: https://github.com/vertitecnologia/vmpay_api_client
+
 Resources disponíveis:
 ======================
 
