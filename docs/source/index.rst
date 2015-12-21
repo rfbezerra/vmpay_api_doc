@@ -1,5 +1,5 @@
-Índice:
-=======
+Índice
+======
 
 .. toctree::
    :maxdepth: 2
