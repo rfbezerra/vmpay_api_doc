@@ -50,7 +50,7 @@ Obrigatórios
 Opcionais:
 ^^^^^^^^^^
 
-*current_installation_id*: id da instalação atual da máquina
+Nenhum.
 
 Atualizar
 =========
