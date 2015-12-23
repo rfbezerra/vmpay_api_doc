@@ -19,10 +19,10 @@ Resources disponíveis
 
    category
    client
+   manufacturer
    location
+   machine
    machine_manufacturer
    machine_model
    machine_type
-   machine
-   manufacturer
    product
