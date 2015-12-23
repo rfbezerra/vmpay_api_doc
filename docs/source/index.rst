@@ -15,13 +15,14 @@ Resources disponíveis
 =====================
 
 .. toctree::
-  :maxdepth: 1
+   :maxdepth: 1
 
-  category
-  client
-  location
-  machine_manufacturer
-  machine_model
-  machine_type
-  manufacturer
-  product
+   category
+   client
+   location
+   machine_manufacturer
+   machine_model
+   machine_type
+   machine
+   manufacturer
+   product
