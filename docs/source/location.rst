@@ -9,7 +9,6 @@ Listar
 
     GET /api/v1/locations
 
-
 Ver
 ===
 
@@ -40,38 +39,30 @@ Request::
           }
         }
 
-
-
 Campos
 ------
 
 Obrigatórios
 ^^^^^^^^^^^^
 
-*location*
+* *location*
 
-*name*: Nome do local.
+  * *name*: Nome do local.
+  * *state*: Sigla de uma das UF do Brasil, em letras maiúsculas. Ex.: "PR".
 
-*state*: Sigla de uma das UF do Brasil, em letras maiúsculas. Ex.: PR
+Opcionais
+^^^^^^^^^
 
-Opcionais:
-^^^^^^^^^^
+* *location*
 
-*client_id*: id do cliente situado neste endereço
-
-*phone*: telefone
-
-*street*: logradouro
-
-*number*: número
-
-*complement*: complemento
-
-*neighborhood*: bairro
-
-*city*: cidade
-
-*zip_code*: CEP
+  * *client_id*: id do cliente do qual esse local faz parte.
+  * *phone*: telefone.
+  * *street*: logradouro.
+  * *number*: número.
+  * *complement*: complemento.
+  * *neighborhood*: bairro.
+  * *city*: cidade.
+  * *zip_code*: CEP.
 
 Atualizar
 =========
@@ -91,13 +82,11 @@ Request::
 Campos
 ------
 
-*location* é obrigatório.
-
-Pelo menos um campo deve ser passado para ser atualizado.
+Ao menos um campo interno a *location* deve ser passado.
 
 Excluir
 =======
 
 ::
 
-    DELETE /v1/locations/[id]
+    DELETE /api/v1/locations/[id]

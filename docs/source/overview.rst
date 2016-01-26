@@ -29,12 +29,12 @@ Essa requisição lista toda as categorias de um determinado operador::
 Códigos de retorno e seus significados
 ======================================
 
-* 200: OK
-* 201: Criado com sucesso
-* 204: Excluído com sucesso
-* 400: bad request, algum parâmetro obrigatório faltando
-* 401: unauthorized, tentativa de alterar/excluir uma categoria de outro operador
-* 422: Erro ao criar, nome já está em uso
+* 200: Requisição processada com sucesso / entidade salva com sucesso
+* 201: Entidade criada com sucesso
+* 204: Entidade excluída com sucesso
+* 400: Algum parâmetro obrigatório faltando ou com formato errado
+* 401: Tentativa de acesso a entidade não permitida
+* 422: Entidade não salva por conta de erros de validação
 
 Código de exemplo
 =================

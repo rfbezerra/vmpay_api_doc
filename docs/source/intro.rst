@@ -9,7 +9,7 @@ Estabelecer a forma e conteúdo que serão disponibilizados para integração co
 outros sistemas denominados ERPs.
 
 Áreas envolvidas
-==============
+================
 
 * Departamento tecnologia
 

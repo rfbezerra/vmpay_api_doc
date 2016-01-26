@@ -9,7 +9,6 @@ Listar
 
     GET /api/v1/machines
 
-
 Ver
 ===
 
@@ -33,22 +32,19 @@ Request::
       }
     }
 
-
-
 Campos
 ------
 
 Obrigatórios
 ^^^^^^^^^^^^
 
-*machine*
+* *machine*
 
-*asset number*: número de patrimônio
+  * *asset number*: número de patrimônio.
+  * *machine_model_id*: id do modelo da máquina.
 
-*machine_model_id*: id do modelo da máquina
-
-Opcionais:
-^^^^^^^^^^
+Opcionais
+^^^^^^^^^
 
 Nenhum.
 
@@ -70,13 +66,11 @@ Request::
 Campos
 ------
 
-*machine* é obrigatório.
-
-Pelo menos um campo deve ser passado para ser atualizado.
+Ao menos um campo interno a *machine* deve ser passado.
 
 Excluir
 =======
 
 ::
 
-    DELETE /v1/machines/[id]
+    DELETE /api/v1/machines/[id]

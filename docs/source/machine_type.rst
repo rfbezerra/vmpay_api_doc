@@ -1,6 +1,6 @@
-################
-Tipos de máquina
-################
+#################
+Tipos de máquinas
+#################
 
 Listar
 ======
@@ -8,7 +8,6 @@ Listar
 ::
 
     GET /api/v1/machine_types
-
 
 Ver
 ===

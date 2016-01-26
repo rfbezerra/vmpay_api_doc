@@ -1,5 +1,5 @@
 #########
-VMPay API
+VMpay API
 #########
 
 Índice

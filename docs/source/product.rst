@@ -9,7 +9,6 @@ Listar
 
     GET /api/v1/vendibles
 
-
 Ver
 ===
 
@@ -42,20 +41,19 @@ Campos
 Obrigatórios
 ^^^^^^^^^^^^
 
-*vendible*
+* *vendible*
 
-*name*: Nome do produto.
+  * *name*: nome do produto.
+  * *type*: valor deve ser sempre *Product*.
 
-*type*: valor deve ser sempre *Product*.
+Opcionais
+^^^^^^^^^
 
-Opcionais:
-^^^^^^^^^^
+* *vendible*
 
-*manufacturer_id*: id do fabricante
-
-*category_id*: id da categoria
-
-*upc_code*: código do produto
+  * *manufacturer_id*: id do fabricante.
+  * *category_id*: id da categoria.
+  * *upc_code*: código do produto.
 
 Atualizar
 =========
@@ -68,32 +66,21 @@ Request::
 
     {
       "vendible": {
-        "name": "Vanilla Coke",
-        "manufacturer_id": 521,
-        "category_id": 253,
-        "upc_code": 999
+        "name": "New Vanilla Coke",
+        "manufacturer_id": 521
       }
     }
 
 Campos
 ------
 
-Proibidos:
-^^^^^^^^^^
+Ao menos um campo interno a *vendible* deve ser passado.
 
-*type*: Este parâmetro não é passado na atualização. Caso esteja
-presente, a request retornará um erro 400.
-
-Obrigatórios
-^^^^^^^^^^^^
-
-*vendible*
-
-Pelo menos um campo deve ser passado.
+O parâmetro *type* não deve ser passado na atualização. Caso esteja presente, o servidor retornará um erro 400.
 
 Excluir
 =======
 
 ::
 
-    DELETE /v1/vendibles/[id]
+    DELETE /api/v1/vendibles/[id]

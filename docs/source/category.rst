@@ -9,7 +9,6 @@ Listar
 
     GET /api/v1/categories
 
-
 Ver
 ===
 
@@ -38,12 +37,12 @@ Campos
 Obrigatórios
 ^^^^^^^^^^^^
 
-*category*
+* *category*
 
-*name*: Nome da categoria.
+  * *name*: nome da categoria.
 
-Opcionais:
-^^^^^^^^^^
+Opcionais
+^^^^^^^^^
 
 Nenhum.
 
@@ -68,12 +67,12 @@ Campos
 Obrigatórios
 ^^^^^^^^^^^^
 
-*category*
+* *category*
 
-*name*: Nome da categoria.
+  * *name*: nome da categoria.
 
-Opcionais:
-^^^^^^^^^^
+Opcionais
+^^^^^^^^^
 
 Nenhum.
 
@@ -82,4 +81,4 @@ Excluir
 
 ::
 
-    DELETE /v1/categories/[id]
+    DELETE /api/v1/categories/[id]

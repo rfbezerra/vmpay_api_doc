@@ -1,6 +1,6 @@
-##################
-Modelos de máquina
-##################
+###################
+Modelos de máquinas
+###################
 
 Listar
 ======
@@ -8,7 +8,6 @@ Listar
 ::
 
     GET /api/v1/machine_models
-
 
 Ver
 ===

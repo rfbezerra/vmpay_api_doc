@@ -1,6 +1,6 @@
-##########
+########
 Clientes
-##########
+########
 
 Listar
 ======
@@ -8,7 +8,6 @@ Listar
 ::
 
     GET /api/v1/clients
-
 
 Ver
 ===
@@ -45,31 +44,26 @@ Campos
 Obrigatórios
 ^^^^^^^^^^^^
 
-*client*
+* *client*
 
-*name*: Nome do cliente.
+  * *name*: nome do cliente.
+  * *legal_type*: indica o tipo de pessoa.
 
-*legal_type*: Indica o tipo de pessoa. Valores permitidos: *person*
-(pessoa física) ou *corporation* (pessoa jurídica).
+    * Valores permitidos: *person* (pessoa física) ou *corporation* (pessoa jurídica).
 
-Opcionais:
-^^^^^^^^^^
+Opcionais
+^^^^^^^^^
 
-*corporate_name*: razão social
+* *client*
 
-*cpf*: CPF
-
-*cnpj*: CNPJ
-
-*contact_name*: Nome para contato
-
-*contact_phone*: Telefone para contato
-
-*contact_email*: email para contato
-
-*notes*: Observação
-
-*main_location_id*: id do endereço principal do cliente
+  * *corporate_name*: razão social.
+  * *cpf*: CPF.
+  * *cnpj*: CNPJ.
+  * *contact_name*: Nome para contato.
+  * *contact_phone*: Telefone para contato.
+  * *contact_email*: email para contato.
+  * *notes*: Observação.
+  * *main_location_id*: id do endereço principal do cliente.
 
 Atualizar
 =========
@@ -89,13 +83,11 @@ Request::
 Campos
 ------
 
-*client* é obrigatório.
-
-Pelo menos um campo deve ser passado.
+Ao menos um campo interno a *client* deve ser passado.
 
 Excluir
 =======
 
 ::
 
-    DELETE /v1/clients/[id]
+    DELETE /api/v1/clients/[id]

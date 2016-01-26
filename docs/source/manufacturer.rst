@@ -9,7 +9,6 @@ Listar
 
     GET /api/v1/manufacturers
 
-
 Ver
 ===
 
@@ -38,12 +37,12 @@ Campos
 Obrigatórios
 ^^^^^^^^^^^^
 
-*manufacturer*
+* *manufacturer*
 
-*name*: Nome do fabricante.
+  * *name*: nome do fabricante.
 
-Opcionais:
-^^^^^^^^^^
+Opcionais
+^^^^^^^^^
 
 Nenhum.
 
@@ -68,12 +67,12 @@ Campos
 Obrigatórios
 ^^^^^^^^^^^^
 
-*manufacturer*
+* *manufacturer*
 
-*name*: Nome do fabricante.
+  * *name*: nome do fabricante.
 
-Opcionais:
-^^^^^^^^^^
+Opcionais
+^^^^^^^^^
 
 Nenhum.
 
@@ -82,4 +81,4 @@ Excluir
 
 ::
 
-    DELETE /v1/manufacturers/[id]
+    DELETE /api/v1/manufacturers/[id]

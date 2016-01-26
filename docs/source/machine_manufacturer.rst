@@ -1,6 +1,6 @@
-######################
-Fabricantes de máquina
-######################
+#######################
+Fabricantes de máquinas
+#######################
 
 Listar
 ======
@@ -8,7 +8,6 @@ Listar
 ::
 
     GET /api/v1/machine_manufacturers
-
 
 Ver
 ===
