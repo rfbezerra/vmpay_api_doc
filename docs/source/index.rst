@@ -27,3 +27,4 @@ Resources disponíveis
    machine_model
    machine_type
    product
+   compound_product
