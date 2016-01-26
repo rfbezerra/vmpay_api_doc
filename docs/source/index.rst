@@ -22,6 +22,7 @@ Resources disponíveis
    manufacturer
    input
    location
+   installation
    machine
    machine_manufacturer
    machine_model
