@@ -28,3 +28,4 @@ Resources disponíveis
    machine_type
    product
    compound_product
+   vend
