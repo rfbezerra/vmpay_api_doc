@@ -20,6 +20,7 @@ Resources disponíveis
    category
    client
    manufacturer
+   input
    location
    machine
    machine_manufacturer
