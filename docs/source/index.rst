@@ -28,4 +28,5 @@ Resources disponíveis
    machine_type
    product
    compound_product
+   cashless_transaction
    vend
