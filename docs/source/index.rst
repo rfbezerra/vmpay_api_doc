@@ -20,14 +20,14 @@ Resources disponíveis
    category
    client
    manufacturer
+   machine_manufacturer
+   installation
    input
    location
-   installation
    machine
-   machine_manufacturer
    machine_model
-   machine_type
    product
    compound_product
+   machine_type
    cashless_transaction
    vend

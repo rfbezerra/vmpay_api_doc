@@ -161,7 +161,7 @@ Campos
 
 Ao menos um campo interno a *vendible* deve ser passado.
 
-O parâmetro *type* não deve ser passado na atualização. Caso esteja presente, o servidor retornará um erro 400.
+O parâmetro *type* é ignorado.
 
 Excluir (obsoleto)
 ------------------
