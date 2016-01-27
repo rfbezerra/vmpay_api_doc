@@ -5,7 +5,7 @@ Instalações
 Listar
 ======
 
-Lista instalações de determinada máquina.
+Lista as instalações de determinada máquina.
 
 ::
 
@@ -212,3 +212,11 @@ Baixa uma instalação de determinada máquina.
 ::
 
     DELETE /api/v1/machines/[machine_id]/installations/[id]
+
+Resources aninhadas
+===================
+
+.. toctree::
+   :maxdepth: 1
+
+   planogram
