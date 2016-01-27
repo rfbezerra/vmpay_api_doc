@@ -74,3 +74,12 @@ Excluir
 ::
 
     DELETE /api/v1/machines/[id]
+
+
+Resources aninhadas
+===================
+
+.. toctree::
+   :maxdepth: 1
+
+   installation
