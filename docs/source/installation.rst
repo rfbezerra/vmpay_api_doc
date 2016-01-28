@@ -20,6 +20,160 @@ Mostra determinada instalação de uma máquina.
 
     GET /api/v1/machines/[machine_id]/installations/[id]
 
+Retorno
+-------
+
+* O campo *balance* diz respeito aos saldos da instalação:
+
+  * *total_collectable_coins*: Saldo coletável no cofre.
+  * *total_collectable_bills*: Saldo coletável no noteiro.
+  * *total_collectable*: Saldo total coletável.
+  * *total_in_coin_changer*: Saldo de troco no modeiro.
+  * *total_in_bill_changer*: Saldo de troco no reciclador.
+  * *total_in_changer*: Saldo total de troco.
+  * *total_in_coins*: Saldo total de moedas.
+  * *total_in_bills*: Saldo total de notas.
+  * *total_in_cash*: Saldo total.
+
+* O campo *current_session* diz respeito ao caixa total:
+
+  * *cashbox*: Cofre.
+  * *bill*: Noteiro.
+  * *collection*: A coletar.
+  * *changer*: Moedeiro.
+  * *recycler*: Reciclador.
+  * *supplied*: Carga/retirada.
+  * *cashless*: Cashless.
+  * *total_vends*: Vendas.
+  * *difference*: Diferença de caixa.
+  * *vends*: Totais de vendas discrimadas por produto.
+
+Segue um exemplo de retorno:
+
+::
+
+    {
+      "id": 123987,
+      "created_at": "2016-01-26T17:36:44.000-02:00",
+      "updated_at": "2016-01-26T19:21:27.000-02:00",
+      "location_id": 12,
+      "equipment_id": 123,
+      "place": "Recepção",
+      "cash_mode": "cash_and_cashless",
+      "restock_mode": "restock_and_cash_collect",
+      "notifications_enabled": true,
+      "audit_enabled": true,
+      "current_planogram": {
+        "id": 189976,
+        "created_at": "2016-01-26T17:36:44.000-02:00",
+        "updated_at": "2016-01-26T17:36:44.000-02:00",
+        "due": "now",
+        "started_at": "2016-01-26T17:36:44.000-02:00",
+        "items": [
+          {
+            "type": "Coil",
+            "name": "1,2",
+            "good_id": 10,
+            "capacity": 20,
+            "par_level": 20,
+            "alert_level": 4,
+            "desired_price": 2.5,
+            "logical_locator": 1
+          },
+          {
+            "type": "Coil",
+            "name": "3",
+            "good_id": 12,
+            "capacity": 10,
+            "par_level": 10,
+            "alert_level": 2,
+            "desired_price": 2.3,
+            "logical_locator": 2
+          },
+          {
+            "type": "VirtualCoil",
+            "name": "4",
+            "good_id": 23,
+            "desired_price": 4.0,
+            "logical_locator": 3,
+            "children": { "1": 2, "2": 1 }
+          },
+          {
+            "type": "Canister",
+            "good_id": 26,
+            "capacity": 2000,
+            "par_level": 2000,
+            "alert_level": 200,
+            "logical_locator": 4
+          },
+          {
+            "type": "Canister",
+            "good_id": 27,
+            "capacity": 3000,
+            "par_level": 3000,
+            "alert_level": 300,
+            "logical_locator": 5
+          },
+          {
+            "type": "VirtualCanister",
+            "good_id": 30,
+            "name": "5",
+            "desired_price": 3.0,
+            "logical_locator": 6,
+            "children": { "4": 20, "5": 15 }
+          }
+        ]
+      },
+      "balance": {
+        "total_collectable_coins": 8.7,
+        "total_collectable_bills": 132.0,
+        "total_collectable": 140.7,
+        "total_in_coin_changer": 101.8,
+        "total_in_bill_changer": 0.0,
+        "total_in_changer": 101.8,
+        "total_in_coins": 110.5,
+        "total_in_bills": 132.0,
+        "total_in_cash": 242.5
+      },
+      "current_session": {
+        "cashbox": 8.7,
+        "bill": 132.0,
+        "collection": 140.7,
+        "changer": -30.95,
+        "recycler": 0.0,
+        "supplied": 132.75,
+        "cashless": 1218.3,
+        "total_vends": 1328.05,
+        "difference": 0.0,
+        "vends": [
+          {
+            "vendible_id": 12,
+            "quantity": 23.0,
+            "value": 52.9,
+            "vendible": {
+              "type": "Product",
+              "category_id": 5,
+              "manufacturer_id": 3,
+              "name": "Coca cola",
+              "upc_code": "123"
+            }
+          },
+          {
+            "vendible_id": 30,
+            "quantity": 19.0,
+            "value": 57.0,
+            "vendible": {
+              "type": "Mixture",
+              "category_id": 7,
+              "manufacturer_id": null,
+              "name": "Cappuccino",
+              "upc_code": null
+            }
+          }
+        ]
+      }
+    }
+
 Criar
 =====
 
