@@ -19,6 +19,7 @@ Resources disponíveis
 
    category
    client
+   equipment
    manufacturer
    machine_manufacturer
    installation
