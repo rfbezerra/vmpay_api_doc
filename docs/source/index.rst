@@ -27,6 +27,7 @@ Resources disponíveis
    location
    machine
    machine_model
+   pick_list
    planogram
    product
    compound_product

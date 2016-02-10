@@ -14,7 +14,7 @@ Lista os planogramas de determinada máquina e instalação.
 Ver
 ===
 
-Mostra determinado planograma instalação de uma máquina e instalação.
+Mostra determinado planograma de uma máquina e instalação.
 
 ::
 
