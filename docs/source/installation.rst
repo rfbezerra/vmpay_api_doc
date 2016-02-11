@@ -78,7 +78,8 @@ Segue um exemplo de retorno:
             "par_level": 20,
             "alert_level": 4,
             "desired_price": 2.5,
-            "logical_locator": 1
+            "logical_locator": 1,
+            "current_balance": 11.0
           },
           {
             "type": "Coil",
@@ -88,7 +89,8 @@ Segue um exemplo de retorno:
             "par_level": 10,
             "alert_level": 2,
             "desired_price": 2.3,
-            "logical_locator": 2
+            "logical_locator": 2,
+            "current_balance": 8.0
           },
           {
             "type": "VirtualCoil",
@@ -104,7 +106,8 @@ Segue um exemplo de retorno:
             "capacity": 2000,
             "par_level": 2000,
             "alert_level": 200,
-            "logical_locator": 4
+            "logical_locator": 4,
+            "current_balance": 983.3
           },
           {
             "type": "Canister",
@@ -112,7 +115,8 @@ Segue um exemplo de retorno:
             "capacity": 3000,
             "par_level": 3000,
             "alert_level": 300,
-            "logical_locator": 5
+            "logical_locator": 5,
+            "current_balance": 1975.4
           },
           {
             "type": "VirtualCanister",
