@@ -377,6 +377,9 @@ Baixa uma instalação de determinada máquina.
 
     DELETE /api/v1/machines/[machine_id]/installations/[id]
 
+
+.. TODO: Revisar essa seção
+
 Resources aninhadas
 ===================
 
@@ -385,3 +388,4 @@ Resources aninhadas
 
    pick_list
    planogram
+   installations/planogram
