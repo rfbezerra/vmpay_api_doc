@@ -17,6 +17,7 @@ Resources disponíveis
 .. toctree::
    :maxdepth: 1
 
+   alert
    category
    client
    equipment

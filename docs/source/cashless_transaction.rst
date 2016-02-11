@@ -130,35 +130,35 @@ Segue um exemplo de retorno de consulta:
           "upc_code":"333"
         }
       },
-    {
-      "id":123456,
-      "occurred_at":"2016-01-26T07:14:24.000-02:00",
-      "client_id":1,
-      "location_id":2,
-      "machine_id":3,
-      "installation_id":4,
-      "planogram_item_id":6,
-      "good_id":8,
-      "coil":"3",
-      "transaction_value":2.5,
-      "remote_credit":false,
-      "client": {
-        "name":"Client X"
-      },
-      "location": {
+      {
+        "id":123456,
+        "occurred_at":"2016-01-26T07:14:24.000-02:00",
         "client_id":1,
-        "name":"Location X"
-      },
-      "machine": {
-        "machine_model_id":9,
-        "asset_number":"123"
-      },
-      "good": {
-        "type":"Product",
-        "category_id":1,
-        "manufacturer_id":3,
-        "name":"Product Y",
-        "upc_code":"444"
+        "location_id":2,
+        "machine_id":3,
+        "installation_id":4,
+        "planogram_item_id":6,
+        "good_id":8,
+        "coil":"3",
+        "transaction_value":2.5,
+        "remote_credit":false,
+        "client": {
+          "name":"Client X"
+        },
+        "location": {
+          "client_id":1,
+          "name":"Location X"
+        },
+        "machine": {
+          "machine_model_id":9,
+          "asset_number":"123"
+        },
+        "good": {
+          "type":"Product",
+          "category_id":1,
+          "manufacturer_id":3,
+          "name":"Product Y",
+          "upc_code":"444"
+        }
       }
-    }
-  ]
+    ]
