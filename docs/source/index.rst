@@ -2,11 +2,9 @@
 VMpay API
 #########
 
-Índice
-======
-
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
+   :caption: Apresentação
 
    intro
    overview
@@ -18,6 +16,7 @@ Resources disponíveis
 
 .. toctree::
    :maxdepth: 1
+   :caption: Cadastros
 
    alert
    category
@@ -46,9 +45,19 @@ Resources disponíveis
    registries/machine
    registries/product
    registries/compound_product
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Informações
+
    info/equipment
    info/machine_manufacturer
    info/machine_model
    info/machine_type
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Relatórios
+
    reports/cashless_transaction
    reports/vend
