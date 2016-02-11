@@ -6,7 +6,7 @@ VMpay API
 ======
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    intro
    overview
@@ -39,13 +39,13 @@ Resources disponíveis
    vend
    registries/category
    registries/client
-   registries/compound_product
-   registries/input
+   registries/manufacturer
    registries/installation
+   registries/input
    registries/location
    registries/machine
-   registries/manufacturer
    registries/product
+   registries/compound_product
    info/equipment
    info/machine_manufacturer
    info/machine_model
