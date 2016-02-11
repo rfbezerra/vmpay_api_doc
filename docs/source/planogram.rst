@@ -20,6 +20,82 @@ Mostra determinado planograma de uma máquina e instalação.
 
     GET /api/v1/machines/[machine_id]/installations/[installation_id]/planograms/[id]
 
+Segue um exemplo de retorno:
+
+::
+
+    {
+      "id": 189976,
+      "created_at": "2016-01-26T17:36:44.000-02:00",
+      "updated_at": "2016-01-26T17:36:44.000-02:00",
+      "due": "now",
+      "started_at": "2016-01-26T17:36:44.000-02:00",
+      "items": [
+        {
+          "id": 86717,
+          "type": "Coil",
+          "name": "1,2",
+          "good_id": 10,
+          "capacity": 20,
+          "par_level": 20,
+          "alert_level": 4,
+          "desired_price": 2.5,
+          "logical_locator": 1,
+          "current_balance": 11.0
+        },
+        {
+          "id": 86718,
+          "type": "Coil",
+          "name": "3",
+          "good_id": 12,
+          "capacity": 10,
+          "par_level": 10,
+          "alert_level": 2,
+          "desired_price": 2.3,
+          "logical_locator": 2,
+          "current_balance": 8.0
+        },
+        {
+          "id": 86719,
+          "type": "VirtualCoil",
+          "name": "4",
+          "good_id": 23,
+          "desired_price": 4.0,
+          "logical_locator": 3,
+          "children": { "1": 2, "2": 1 }
+        },
+        {
+          "id": 86720,
+          "type": "Canister",
+          "good_id": 26,
+          "capacity": 2000,
+          "par_level": 2000,
+          "alert_level": 200,
+          "logical_locator": 4,
+          "current_balance": 983.3
+        },
+        {
+          "id": 86721,
+          "type": "Canister",
+          "good_id": 27,
+          "capacity": 3000,
+          "par_level": 3000,
+          "alert_level": 300,
+          "logical_locator": 5,
+          "current_balance": 1975.4
+        },
+        {
+          "id": 86722,
+          "type": "VirtualCanister",
+          "good_id": 30,
+          "name": "5",
+          "desired_price": 3.0,
+          "logical_locator": 6,
+          "children": { "4": 20, "5": 15 }
+        }
+      ]
+    }
+
 Criar
 =====
 

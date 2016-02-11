@@ -71,6 +71,7 @@ Segue um exemplo de retorno:
         "started_at": "2016-01-26T17:36:44.000-02:00",
         "items": [
           {
+            "id": 86717,
             "type": "Coil",
             "name": "1,2",
             "good_id": 10,
@@ -82,6 +83,7 @@ Segue um exemplo de retorno:
             "current_balance": 11.0
           },
           {
+            "id": 86718,
             "type": "Coil",
             "name": "3",
             "good_id": 12,
@@ -93,6 +95,7 @@ Segue um exemplo de retorno:
             "current_balance": 8.0
           },
           {
+            "id": 86719,
             "type": "VirtualCoil",
             "name": "4",
             "good_id": 23,
@@ -101,6 +104,7 @@ Segue um exemplo de retorno:
             "children": { "1": 2, "2": 1 }
           },
           {
+            "id": 86720,
             "type": "Canister",
             "good_id": 26,
             "capacity": 2000,
@@ -110,6 +114,7 @@ Segue um exemplo de retorno:
             "current_balance": 983.3
           },
           {
+            "id": 86721,
             "type": "Canister",
             "good_id": 27,
             "capacity": 3000,
@@ -119,6 +124,7 @@ Segue um exemplo de retorno:
             "current_balance": 1975.4
           },
           {
+            "id": 86722,
             "type": "VirtualCanister",
             "good_id": 30,
             "name": "5",
