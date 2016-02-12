@@ -377,15 +377,11 @@ Baixa uma instalação de determinada máquina.
 
     DELETE /api/v1/machines/[machine_id]/installations/[id]
 
-
-.. TODO: Revisar essa seção
-
 Resources aninhadas
 ===================
 
 .. toctree::
    :maxdepth: 1
 
-   pick_list
-   planogram
+   installations/pick_list
    installations/planogram

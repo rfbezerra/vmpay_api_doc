@@ -9,8 +9,6 @@ VMpay API
    intro
    overview
 
-.. TODO: revisar essa seção
-
 Resources disponíveis
 =====================
 
@@ -18,24 +16,6 @@ Resources disponíveis
    :maxdepth: 1
    :caption: Cadastros
 
-   alert
-   category
-   client
-   equipment
-   manufacturer
-   machine_manufacturer
-   installation
-   input
-   location
-   machine
-   machine_model
-   pick_list
-   planogram
-   product
-   compound_product
-   machine_type
-   cashless_transaction
-   vend
    registries/category
    registries/client
    registries/manufacturer
@@ -59,5 +39,6 @@ Resources disponíveis
    :maxdepth: 1
    :caption: Relatórios
 
+   reports/alert
    reports/cashless_transaction
    reports/vend
