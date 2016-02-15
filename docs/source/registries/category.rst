@@ -165,7 +165,7 @@ Exemplo:
 
   {
     "id": 387,
-    "name": "oasis"
+    "name": "Refrigerantes"
   }
 
 Erros
