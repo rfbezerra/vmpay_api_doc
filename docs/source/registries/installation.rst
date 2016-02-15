@@ -9,7 +9,71 @@ Lista as instalações de determinada máquina.
 
 ::
 
-    GET /api/v1/machines/[machine_id]/installations
+  GET /api/v1/machines/[machine_id]/installations
+
+Parâmetros de URL:
+------------------
+
+==========  ===============  ===========
+parâmetro   descrição        obrigatório
+==========  ===============  ===========
+machine_id  id da máquina    sim
+==========  ===============  ===========
+
+Retorno
+-------
+
+======  =========
+status  descrição
+======  =========
+200     OK
+======  =========
+
+Exemplo:
+
+::
+
+  [
+    {
+      "id": 77,
+      "created_at": "2014-10-17T16:11:43.000-03:00",
+      "updated_at": "2014-11-20T10:14:31.000-02:00",
+      "location_id": 34,
+      "machine_id": 42,
+      "equipment_id": 314,
+      "place": "Recepção",
+      "cash_mode": "cash_and_cashless",
+      "restock_mode": "restock_and_cash_collect",
+      "notifications_enabled": true,
+      "audit_enabled": true
+    },
+    {
+      "id": 88,
+      "created_at": "2014-10-24T12:25:15.000-02:00",
+      "updated_at": "2014-11-20T10:14:31.000-02:00",
+      "location_id": 28,
+      "machine_id": 42,
+      "equipment_id": 314,
+      "place": "Hall Biblioteca",
+      "cash_mode": "cash_and_cashless",
+      "restock_mode": "restock_and_cash_collect",
+      "notifications_enabled": true,
+      "audit_enabled": true
+    },
+    {
+      "id": 138,
+      "created_at": "2014-11-21T16:54:19.000-02:00",
+      "updated_at": "2014-11-21T19:40:14.000-02:00",
+      "location_id": 34,
+      "machine_id": 42,
+      "equipment_id": 314,
+      "place": "Recepção",
+      "cash_mode": "cash_and_cashless",
+      "restock_mode": "restock_and_cash_collect",
+      "notifications_enabled": true,
+      "audit_enabled": true
+    }
+  ]
 
 Ver
 ===
@@ -18,10 +82,26 @@ Mostra determinada instalação de uma máquina.
 
 ::
 
-    GET /api/v1/machines/[machine_id]/installations/[id]
+  GET /api/v1/machines/[machine_id]/installations/[id]
+
+Parâmetros de URL:
+------------------
+
+==========  ================  ===========
+parâmetro   descrição         obrigatório
+==========  ================  ===========
+machine_id  id da máquina     sim
+id          id da instalação  sim
+==========  ================  ===========
 
 Retorno
 -------
+
+======  =========
+status  descrição
+======  =========
+200     OK
+======  =========
 
 * O campo *balance* diz respeito aos saldos da instalação:
 
@@ -184,6 +264,15 @@ Segue um exemplo de retorno:
       }
     }
 
+Erros
+-----
+
+==========  ====================================  ================
+status      descrição                             response body
+==========  ====================================  ================
+404         máquina ou instalação não encontrada  (vazio)
+==========  ====================================  ================
+
 Criar
 =====
 
@@ -193,7 +282,16 @@ Se a máquina já possuir uma instalação ativa, a mesma é baixada automaticam
 
 ::
 
-    POST /api/v1/machines/[machine_id]/installations
+  POST /api/v1/machines/[machine_id]/installations
+
+Parâmetros de URL:
+------------------
+
+==========  ===============  ===========
+parâmetro   descrição        obrigatório
+==========  ===============  ===========
+machine_id  id da máquina    sim
+==========  ===============  ===========
 
 Request::
 
@@ -340,6 +438,117 @@ Opcionais
 
   * *place*: local interno.
 
+Retorno
+-------
+
+======  ==================
+status  descrição
+======  ==================
+201     Criado com sucesso
+======  ==================
+
+Exemplo:
+
+::
+
+  {
+    "id": 1109,
+    "created_at": "2016-02-15T16:19:36.832-02:00",
+    "updated_at": "2016-02-15T16:19:36.832-02:00",
+    "location_id": 185,
+    "machine_id": 612,
+    "equipment_id": 314,
+    "place": "Recepção",
+    "cash_mode": "cash_and_cashless",
+    "restock_mode": "restock_and_cash_collect",
+    "notifications_enabled": true,
+    "audit_enabled": true,
+    "current_planogram": {
+      "id": 2950,
+      "created_at": "2016-02-15T16:19:36.841-02:00",
+      "updated_at": "2016-02-15T16:19:36.841-02:00",
+      "due": "due_now",
+      "started_at": "2016-02-15T16:20:36.603-02:00",
+      "items": [
+        {
+          "id": 113835,
+          "created_at": "2016-02-15T16:19:36.843-02:00",
+          "updated_at": "2016-02-15T16:19:36.843-02:00",
+          "planogram_id": 2950,
+          "type": "Coil",
+          "good_id": 10,
+          "name": "1,2",
+          "capacity": 20,
+          "par_level": 20,
+          "alert_level": 4,
+          "desired_price": 2.5,
+          "modified": false,
+          "undefined": false,
+          "logical_locator": "1",
+          "physical_locators": [
+            "1",
+            "2"
+          ],
+          "children": null,
+          "current_balance": 20,
+          "good": {
+            "id": 10,
+            "name": "Amendoin",
+            "upc_code": "77",
+            "upc_code_name": "77 - Amendoin",
+            "unit_description": "Unidade",
+            "unit_symbol": "un"
+          }
+        }
+      ]
+    },
+    "balance": {
+      "total_collectable_coins": 0,
+      "total_collectable_bills": 0,
+      "total_collectable": 0,
+      "total_in_coin_changer": 0,
+      "total_in_bill_changer": 0,
+      "total_in_changer": 0,
+      "total_in_coins": 0,
+      "total_in_bills": 0,
+      "total_in_cash": 0
+    },
+    "current_session": {
+      "cashbox": 0,
+      "bill": 0,
+      "collection": 0,
+      "changer": 0,
+      "recycler": 0,
+      "supplied": 0,
+      "cashless": 0,
+      "total_vends": 0,
+      "difference": 0,
+      "vends": []
+    }
+  }
+
+Erros
+-----
+
+==========  ====================================  ====================================================
+status      descrição                             response body
+==========  ====================================  ====================================================
+400         parâmetros faltando                   { "status": "400", "error": "Bad Request" }
+401         não autorizado                        (vazio)
+422         erro ao criar                         ver exemplo abaixo
+==========  ====================================  ====================================================
+
+422 - erro ao criar
+
+::
+
+  {
+    "location_id": [
+      "não pode ficar em branco"
+    ]
+  }
+
+
 Atualizar
 =========
 
@@ -347,17 +556,27 @@ Atualiza uma instalação de determinada máquina.
 
 ::
 
-    PATCH /api/v1/machines/[machine_id]/installations/[id]
+  PATCH /api/v1/machines/[machine_id]/installations/[id]
+
+Parâmetros de URL:
+------------------
+
+==========  ================  ===========
+parâmetro   descrição         obrigatório
+==========  ================  ===========
+machine_id  id da máquina     sim
+id          id da instalação  sim
+==========  ================  ===========
 
 Request::
 
-    {
-      "installation": {
-        "location_id": 13,
-        "place": "Recepção 2",
-        "notifications_enabled": false
-      }
+  {
+    "installation": {
+      "location_id": 13,
+      "place": "Recepção 2",
+      "notifications_enabled": false
     }
+  }
 
 Campos
 ------
@@ -368,6 +587,117 @@ Somente os parâmetros *location_id*, *place* e *notifications_enabled* são con
 
 Não é permitido atualizar um planograma ativo, somente cadastrar um outro planograma pendente. Para tanto, ver Planogramas.
 
+Retorno
+-------
+
+======  ======================
+status  descrição
+======  ======================
+200     Atualizado com sucesso
+======  ======================
+
+Exemplo:
+
+::
+
+  {
+    "id": 1119,
+    "created_at": "2016-02-15T16:50:47.000-02:00",
+    "updated_at": "2016-02-15T17:23:34.353-02:00",
+    "location_id": 185,
+    "machine_id": 612,
+    "equipment_id": 314,
+    "place": "Recepção 2",
+    "cash_mode": "cash_and_cashless",
+    "restock_mode": "restock_and_cash_collect",
+    "notifications_enabled": false,
+    "audit_enabled": true,
+    "current_planogram": {
+      "id": 2960,
+      "created_at": "2016-02-15T16:50:47.000-02:00",
+      "updated_at": "2016-02-15T16:50:47.000-02:00",
+      "due": "due_now",
+      "started_at": "2016-02-15T16:51:47.000-02:00",
+      "items": [
+        {
+          "id": 113845,
+          "created_at": "2016-02-15T16:50:47.000-02:00",
+          "updated_at": "2016-02-15T16:50:47.000-02:00",
+          "planogram_id": 2960,
+          "type": "Coil",
+          "good_id": 10,
+          "name": "1,2",
+          "capacity": 20,
+          "par_level": 20,
+          "alert_level": 4,
+          "desired_price": 2.5,
+          "modified": false,
+          "undefined": false,
+          "logical_locator": "1",
+          "physical_locators": [
+            "1",
+            "2"
+          ],
+          "children": null,
+          "current_balance": 20,
+          "good": {
+            "id": 10,
+            "name": "Amendoin",
+            "upc_code": "77",
+            "upc_code_name": "77 - Amendoin",
+            "unit_description": "Unidade",
+            "unit_symbol": "un"
+          }
+        }
+      ]
+    },
+    "balance": {
+      "total_collectable_coins": 0,
+      "total_collectable_bills": 0,
+      "total_collectable": 0,
+      "total_in_coin_changer": 0,
+      "total_in_bill_changer": 0,
+      "total_in_changer": 0,
+      "total_in_coins": 0,
+      "total_in_bills": 0,
+      "total_in_cash": 0
+    },
+    "current_session": {
+      "cashbox": 0,
+      "bill": 0,
+      "collection": 0,
+      "changer": 0,
+      "recycler": 0,
+      "supplied": 0,
+      "cashless": 0,
+      "total_vends": 0,
+      "difference": 0,
+      "vends": []
+    }
+  }
+
+Erros
+-----
+
+==========  ====================================  ====================================================
+status      descrição                             response body
+==========  ====================================  ====================================================
+400         parâmetros faltando                   { "status": "400", "error": "Bad Request" }
+401         não autorizado                        (vazio)
+404         máquina ou instalação não encontrada  (vazio)
+422         erro ao atualizar                     ver exemplo abaixo
+==========  ====================================  ====================================================
+
+422 - erro ao atualizar:
+
+::
+
+  {
+    "location_id": [
+      "não é válido"
+    ]
+  }
+
 Baixar
 ======
 
@@ -375,7 +705,36 @@ Baixa uma instalação de determinada máquina.
 
 ::
 
-    DELETE /api/v1/machines/[machine_id]/installations/[id]
+  DELETE /api/v1/machines/[machine_id]/installations/[id]
+
+Parâmetros de URL:
+------------------
+
+==========  ================  ===========
+parâmetro   descrição         obrigatório
+==========  ================  ===========
+machine_id  id da máquina     sim
+id          id da instalação  sim
+==========  ================  ===========
+
+Retorno
+-------
+
+======  ====================  =============
+status  descrição             response body
+======  ====================  =============
+204     Excluído com sucesso  (vazio)
+======  ====================  =============
+
+Erros
+-----
+
+==========  ====================================  ====================================================
+status      descrição                             response body
+==========  ====================================  ====================================================
+401         não autorizado                        (vazio)
+404         máquina ou instalação não encontrada  (vazio)
+==========  ====================================  ====================================================
 
 Resources aninhadas
 ===================
