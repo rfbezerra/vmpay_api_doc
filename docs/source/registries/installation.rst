@@ -383,5 +383,5 @@ Resources aninhadas
 .. toctree::
    :maxdepth: 1
 
-   pick_list
-   planogram
+   installations/pick_list
+   installations/planogram
