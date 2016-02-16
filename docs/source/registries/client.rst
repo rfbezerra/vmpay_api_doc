@@ -263,7 +263,7 @@ Erros
 status      descrição                             response body
 ==========  ====================================  ====================================================
 400         parâmetros faltando                   { "status": "400", "error": "Bad Request" }
-404         categoria não encontrada              { "status": "404", "error": "Not Found" }
+404         cliente não encontrado                { "status": "404", "error": "Not Found" }
 422         erro ao atualizar                     ver exemplo abaixo
 ==========  ====================================  ====================================================
 
@@ -308,5 +308,5 @@ Erros
 ==========  ====================================  ====================================================
 status      descrição                             response body
 ==========  ====================================  ====================================================
-404         cliente não encontrada                { "status": "404", "error": "Not Found" }
+404         cliente não encontrado                { "status": "404", "error": "Not Found" }
 ==========  ====================================  ====================================================

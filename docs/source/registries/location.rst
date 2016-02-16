@@ -113,7 +113,7 @@ Erros
 ==========  ========================  =========================================
 status      descrição                 response body
 ==========  ========================  =========================================
-404         categoria não encontrada  { "status": "404", "error": "Not Found" }
+404         local não encontrado      { "status": "404", "error": "Not Found" }
 ==========  ========================  =========================================
 
 Criar
@@ -276,7 +276,7 @@ status      descrição                             response body
 ==========  ====================================  ====================================================
 400         parâmetros faltando                   { "status": "400", "error": "Bad Request" }
 401         não autorizado                        (vazio)
-404         categoria não encontrada              { "status": "404", "error": "Not Found" }
+404         local não encontrado                  { "status": "404", "error": "Not Found" }
 422         erro ao atualizar                     ver exemplo abaixo
 ==========  ====================================  ====================================================
 
@@ -322,5 +322,5 @@ Erros
 ==========  ====================================  ====================================================
 status      descrição                             response body
 ==========  ====================================  ====================================================
-404         categoria não encontrada              { "status": "404", "error": "Not Found" }
+404         local não encontrado                  { "status": "404", "error": "Not Found" }
 ==========  ====================================  ====================================================
