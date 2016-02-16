@@ -82,7 +82,7 @@ Ver
 
 ::
 
-    GET /api/v1/categories/[id]
+  GET /api/v1/categories/[id]
 
 Parâmetros de URL:
 ------------------
@@ -194,7 +194,7 @@ Atualizar
 
 ::
 
-    PATCH /api/v1/categories/[id]
+  PATCH /api/v1/categories/[id]
 
 Parâmetros de URL:
 ------------------
@@ -273,7 +273,7 @@ Excluir
 
 ::
 
-    DELETE /api/v1/categories/[id]
+  DELETE /api/v1/categories/[id]
 
 Parâmetros de URL:
 ------------------
