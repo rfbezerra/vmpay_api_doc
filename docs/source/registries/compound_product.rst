@@ -9,12 +9,83 @@ Listar
 
     GET /api/v1/compound_products
 
+Retorno
+-------
+
+======  =========
+status  descrição
+======  =========
+200     OK
+======  =========
+
+Exemplo::
+
+  [
+    {
+      "id": 2928,
+      "created_at": "2015-12-18T17:23:20.000-02:00",
+      "updated_at": "2015-12-18T17:23:20.000-02:00",
+      "type": "Combo",
+      "category_id": 236,
+      "name": "Nescau + Leite"
+    },
+    {
+      "id": 3046,
+      "created_at": "2016-01-20T16:28:18.000-02:00",
+      "updated_at": "2016-01-20T16:28:18.000-02:00",
+      "type": "Mixture",
+      "category_id": 471,
+      "name": "Capuccino brasileiro"
+    }
+  ]
+
+
 Ver
 ===
 
 ::
 
-    GET /api/v1/compound_products/[id]
+  GET /api/v1/compound_products/[id]
+
+Parâmetros de URL:
+------------------
+
+=========  ======================  ===========
+parâmetro  descrição               obrigatório
+=========  ======================  ===========
+id         id do produto composto  sim
+=========  ======================  ===========
+
+Retorno
+-------
+
+======  =========
+status  descrição
+======  =========
+200     OK
+======  =========
+
+Exemplo:
+
+::
+
+  {
+    "id": 3046,
+    "created_at": "2016-01-20T16:28:18.000-02:00",
+    "updated_at": "2016-01-20T16:28:18.000-02:00",
+    "type": "Mixture",
+    "category_id": 471,
+    "name": "Capuccino brasileiro"
+  }
+
+Erros
+-----
+
+==========  ========================  =========================================
+status      descrição                 response body
+==========  ========================  =========================================
+404         categoria não encontrada  { "status": "404", "error": "Not Found" }
+==========  ========================  =========================================
 
 Criar
 =====
@@ -25,13 +96,13 @@ Criar
 
 Request::
 
-    {
-      "compound_product": {
-        "type": "Combo",
-        "category_id": 12,
-        "name": "Coca + Ruffles"
-      }
+  {
+    "compound_product": {
+      "type": "Combo",
+      "category_id": 12,
+      "name": "Coca + Ruffles"
     }
+  }
 
 Campos
 ------
@@ -53,12 +124,63 @@ Opcionais
 
 Nenhum.
 
+Retorno
+-------
+
+======  ==================
+status  descrição
+======  ==================
+201     Criado com sucesso
+======  ==================
+
+Exemplo::
+
+  {
+    "id": 2831,
+    "created_at": "2016-02-16T11:19:06.003-02:00",
+    "updated_at": "2016-02-16T11:19:06.003-02:00",
+    "type": "Combo",
+    "category_id": 12,
+    "name": "Coca + Ruffles"
+  }
+
+Erros
+-----
+
+==========  ====================================  ====================================================
+status      descrição                             response body
+==========  ====================================  ====================================================
+400         parâmetros faltando                   { "status": "400", "error": "Bad Request" }
+401         não autorizado                        (vazio)
+422         erro ao criar                         ver exemplo abaixo
+==========  ====================================  ====================================================
+
+422 - erro ao criar
+
+::
+
+  {
+    "name": [
+      "não pode ficar em branco"
+    ]
+  }
+
+
 Atualizar
 =========
 
 ::
 
-    PATCH /api/v1/compound_products/[id]
+  PATCH /api/v1/compound_products/[id]
+
+Parâmetros de URL:
+------------------
+
+=========  ======================  ===========
+parâmetro  descrição               obrigatório
+=========  ======================  ===========
+id         id do produto composto  sim
+=========  ======================  ===========
 
 Request::
 
@@ -75,9 +197,79 @@ Ao menos um campo interno a *compound_product* deve ser passado.
 
 Caso o parâmetro *type* seja passado, o mesmo é desconsiderado.
 
+Retorno
+-------
+
+======  ======================
+status  descrição
+======  ======================
+200     Atualizado com sucesso
+======  ======================
+
+Exemplo::
+
+  {
+    "id": 2831,
+    "created_at": "2016-02-16T11:19:06.000-02:00",
+    "updated_at": "2016-02-16T11:25:01.944-02:00",
+    "type": "Combo",
+    "category_id": 12,
+    "name": "Novo produto composto"
+  }
+
+Erros
+-----
+
+==========  ====================================  ====================================================
+status      descrição                             response body
+==========  ====================================  ====================================================
+400         parâmetros faltando                   { "status": "400", "error": "Bad Request" }
+401         não autorizado                        (vazio)
+404         categoria não encontrada              { "status": "404", "error": "Not Found" }
+422         erro ao atualizar                     ver exemplo abaixo
+==========  ====================================  ====================================================
+
+422 - erro ao atualizar:
+
+::
+
+  {
+    "name": [
+      "já está em uso"
+    ]
+  }
+
 Excluir
 =======
 
 ::
 
-    DELETE /api/v1/compound_products/[id]
+  DELETE /api/v1/compound_products/[id]
+
+Parâmetros de URL:
+------------------
+
+=========  ======================  ===========
+parâmetro  descrição               obrigatório
+=========  ======================  ===========
+id         id do produto composto  sim
+=========  ======================  ===========
+
+Retorno
+-------
+
+======  ====================  =============
+status  descrição             response body
+======  ====================  =============
+204     Excluído com sucesso  (vazio)
+======  ====================  =============
+
+
+Erros
+-----
+
+==========  ====================================  ====================================================
+status      descrição                             response body
+==========  ====================================  ====================================================
+404         produto composto não encontrato       { "status": "404", "error": "Not Found" }
+==========  ====================================  ====================================================
