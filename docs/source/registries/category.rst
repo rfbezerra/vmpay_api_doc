@@ -7,7 +7,7 @@ Listar
 
 ::
 
-    GET /api/v1/categories
+  GET /api/v1/categories
 
 Retorno
 -------
