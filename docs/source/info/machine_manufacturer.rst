@@ -7,11 +7,30 @@ Listar
 
 ::
 
-    GET /api/v1/machine_manufacturers
+  GET /api/v1/machine_manufacturers
 
-Ver
-===
+Retorno
+-------
 
-::
+======  =========
+status  descrição
+======  =========
+200     OK
+======  =========
 
-    GET /api/v1/machine_manufacturers/[id]
+Exemplo::
+
+  [
+    {
+      "id": 1,
+      "name": "Aequator"
+    },
+    {
+      "id": 2,
+      "name": "AMS"
+    },
+    {
+      "id": 3,
+      "name": "Bianchi"
+    }
+  ]
