@@ -30,7 +30,7 @@ A versão do Sphinx utilizada neste projeto foi a 1.3.3 com o Python 2.7.10.
 
 Há um [guia online](https://read-the-docs.readthedocs.org/en/latest/webhooks.html) de como integrar um projeto documentado com o Sphinx e hospedado no GitHub com o Read the Docs.
 
-A integração deste projeto com o Read The Docs já foi feita. Ou seja, ao se dar um push para este repositório, a [documentação online](http://vmpay-api.readthedocs.org/en/latest/) hospedada no Read the Docs é atualizada automaticamente.
+A integração deste projeto com o Read The Docs já foi feita. Ou seja, ao se dar um push para este repositório, a [documentação online](http://vmpay-api.readthedocs.io/en/latest/) hospedada no Read the Docs é atualizada automaticamente.
 
 ### Alterando a documentação
 
@@ -48,4 +48,4 @@ A documentação é gerada em HTML a partir dos arquivos .rst (reStructuredText)
 
 ### Onde ler a documentação da API do VMPay
 
-A documentação em formato legível está [aqui](http://vmpay-api.readthedocs.org/en/latest/).
+A documentação em formato legível está [aqui](http://vmpay-api.readthedocs.io/en/latest/).
