@@ -27,7 +27,8 @@ Exemplo::
       "updated_at": "2015-12-18T17:23:20.000-02:00",
       "type": "Combo",
       "category_id": 236,
-      "name": "Nescau + Leite"
+      "name": "Nescau + Leite",
+      "external_id": "qwe111"
     },
     {
       "id": 3046,
@@ -35,7 +36,8 @@ Exemplo::
       "updated_at": "2016-01-20T16:28:18.000-02:00",
       "type": "Mixture",
       "category_id": 471,
-      "name": "Capuccino brasileiro"
+      "name": "Capuccino brasileiro",
+      "external_id": "qwe222"
     }
   ]
 
@@ -75,7 +77,8 @@ Exemplo:
     "updated_at": "2016-01-20T16:28:18.000-02:00",
     "type": "Mixture",
     "category_id": 471,
-    "name": "Capuccino brasileiro"
+    "name": "Capuccino brasileiro",
+    "external_id": "qwe222"
   }
 
 Erros
@@ -100,7 +103,8 @@ Request::
     "compound_product": {
       "type": "Combo",
       "category_id": 12,
-      "name": "Coca + Ruffles"
+      "name": "Coca + Ruffles",
+      "external_id": "qwe123"
     }
   }
 
@@ -122,7 +126,9 @@ Obrigatórios
 Opcionais
 ^^^^^^^^^
 
-Nenhum.
+* *compound_product*
+
+  * *external_id*: identificador externo do produto composto.
 
 Retorno
 -------
@@ -141,7 +147,8 @@ Exemplo::
     "updated_at": "2016-02-16T11:19:06.003-02:00",
     "type": "Combo",
     "category_id": 12,
-    "name": "Coca + Ruffles"
+    "name": "Coca + Ruffles",
+    "external_id": "qwe123"
   }
 
 Erros
@@ -214,7 +221,8 @@ Exemplo::
     "updated_at": "2016-02-16T11:25:01.944-02:00",
     "type": "Combo",
     "category_id": 12,
-    "name": "Novo produto composto"
+    "name": "Novo produto composto",
+    "external_id": null
   }
 
 Erros

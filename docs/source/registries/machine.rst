@@ -27,6 +27,7 @@ Exemplo:
       "id": 42,
       "machine_model_id": 82,
       "asset_number": "M010 - 0037",
+      "external_id": null,
       "installation": {
         "id": 1106,
         "location_id": 1391,
@@ -41,7 +42,8 @@ Exemplo:
     {
       "id": 222,
       "machine_model_id": 75,
-      "asset_number": "M003 - 0009"
+      "asset_number": "M003 - 0009",
+      "external_id": null
     }
   ]
 
@@ -78,6 +80,7 @@ Exemplo:
     "id": 42,
     "machine_model_id": 82,
     "asset_number": "M010 - 0037",
+    "external_id": null,
     "installation": {
       "id": 1106,
       "location_id": 1391,
@@ -111,7 +114,8 @@ Request::
   {
     "machine": {
       "asset_number": "01234",
-      "machine_model_id": "12"
+      "machine_model_id": "12",
+      "external_id": 'qwe123'
     }
   }
 
@@ -129,7 +133,9 @@ Obrigatórios
 Opcionais
 ^^^^^^^^^
 
-Nenhum.
+* *machine*
+
+  * *external_id*: identificador externo da máquina.
 
 Retorno
 -------
@@ -145,7 +151,8 @@ Exemplo::
   {
     "id": 614,
     "machine_model_id": 12,
-    "asset_number": "01234"
+    "asset_number": "01234",
+    "external_id": 'qwe123'
   }
 
 Erros
@@ -216,6 +223,7 @@ Exemplo::
     "id": 612,
     "machine_model_id": 69,
     "asset_number": "998877",
+    "external_id": null,
     "installation": {
       "id": 1119,
       "location_id": 185,

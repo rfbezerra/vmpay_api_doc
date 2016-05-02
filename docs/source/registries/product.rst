@@ -30,6 +30,7 @@ Exemplo::
       "category_id": 23,
       "name": "Ruffles 50 g",
       "upc_code": "91",
+      "external_id": null,
       "url": "http://localhost:4000/api/v1/products/163"
     },
     {
@@ -41,6 +42,7 @@ Exemplo::
       "category_id": 23,
       "name": "Doritos 55 g",
       "upc_code": "110",
+      "external_id": null,
       "url": "http://localhost:4000/api/v1/products/164"
     },
     {
@@ -52,6 +54,7 @@ Exemplo::
       "category_id": 23,
       "name": "Torcida Queijo 50 g",
       "upc_code": "93",
+      "external_id": null,
       "url": "http://localhost:4000/api/v1/products/165"
     }
   ]
@@ -92,6 +95,7 @@ Exemplo::
     "category_id": 23,
     "name": "Ruffles 50 g",
     "upc_code": "91",
+    "external_id": null,
     "url": "http://localhost:4000/api/v1/products/163"
   }
 
@@ -119,7 +123,8 @@ Request::
       "name": "Schweppes Citrus",
       "manufacturer_id": 56,
       "category_id": 21,
-      "upc_code": 111
+      "upc_code": 111,
+      "external_id": '123qwe'
     }
   }
 
@@ -141,6 +146,7 @@ Opcionais
 * *product*
 
   * *upc_code*: código do produto.
+  * *external_id*: identificador externo do produto.
 
 Retorno
 -------
@@ -162,6 +168,7 @@ Exemplo::
     "category_id": 21,
     "name": "Schweppes Citrus",
     "upc_code": "111",
+    "external_id": '123qwe',
     "url": "http://localhost:4000/api/v1/products/2830"
   }
 
@@ -236,6 +243,7 @@ Exemplo::
     "category_id": 21,
     "name": "Schweppes Guaraná",
     "upc_code": "111",
+    "external_id": null,
     "url": "http://localhost:4000/api/v1/products/2830"
   }
 

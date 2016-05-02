@@ -30,6 +30,7 @@ Exemplo:
       "category_id": 470,
       "name": "Leite em pó",
       "unit": "gram",
+      "external_id": null,
       "url": "http://vmpay.vertitecnologia.com.br/api/v1/inputs/3044"
     },
     {
@@ -39,6 +40,7 @@ Exemplo:
       "category_id": 470,
       "name": "Café em pó",
       "unit": "gram",
+      "external_id": null,
       "url": "http://vmpay.vertitecnologia.com.br/api/v1/inputs/3045"
     }
   ]
@@ -79,6 +81,7 @@ Exemplo:
     "category_id": 470,
     "name": "Leite em pó",
     "unit": "gram",
+    "external_id": null,
     "url": "http://vmpay.vertitecnologia.com.br/api/v1/inputs/3044"
   }
 
@@ -104,7 +107,8 @@ Request::
     "input": {
       "category_id": 11,
       "name": "Leite em pó",
-      "unit": "gram"
+      "unit": "gram",
+      "external_id": 'qwe123'
     }
   }
 
@@ -125,7 +129,9 @@ Obrigatórios
 Opcionais
 ^^^^^^^^^
 
-Nenhum.
+* *input*
+
+  * *external_id*: identificador externo do insumo.
 
 Retorno
 -------
@@ -147,6 +153,7 @@ Exemplo:
     "category_id": 11,
     "name": "Leite em pó",
     "unit": "gram",
+    "external_id": 'qwe123',
     "url": "http://localhost:4000/api/v1/inputs/2829"
   }
 
@@ -220,6 +227,7 @@ Exemplo:
     "category_id": 11,
     "name": "Novo nome",
     "unit": "gram",
+    "external_id": null,
     "url": "http://localhost:4000/api/v1/inputs/2829"
   }
 
