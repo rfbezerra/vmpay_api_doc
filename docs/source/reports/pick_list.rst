@@ -33,7 +33,7 @@ Retorno
 * **url**: o endereço da pick list no VMpay
 * **items**: detalhes dos itens da pick list
 
-Exemplo:
+Segue um exemplo de retorno de consulta:
 
 ::
 
