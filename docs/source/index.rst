@@ -41,4 +41,5 @@ Resources disponíveis
 
    reports/alert
    reports/cashless_transaction
+   reports/pick_list
    reports/vend
