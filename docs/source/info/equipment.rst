@@ -9,6 +9,24 @@ Listar
 
   GET /api/v1/equipments
 
+Filtros
+-------
+
+Os parâmetros abaixo podem ser passados como uma `query string <https://en.wikipedia.org/wiki/Query_string>`_.
+
+**assigned**:
+  Retorna máquinas associadas, não associadas ou todas, dependendo do valor:
+
+  * *true*: retorna somente os equipamentos associados a alguma instalação ativa
+  * *false*: retorna somente os equipamento não associados a nenhuma das instalações ativas
+  * não informado: retorna todos os equipamentos
+
+Exemplos::
+
+  GET /api/v1/equipments?assigned=true
+  GET /api/v1/equipments?assigned=false
+  GET /api/v1/equipments
+
 Retorno
 -------
 
