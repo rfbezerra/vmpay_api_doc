@@ -25,6 +25,7 @@ Resources disponíveis
    registries/machine
    registries/product
    registries/compound_product
+   registries/route
 
 .. toctree::
    :maxdepth: 1
