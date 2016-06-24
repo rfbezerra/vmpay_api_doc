@@ -590,7 +590,7 @@ Campos
 
 Ao menos um campo interno a *installation* deve ser passado.
 
-Somente os parâmetros *location_id*, *place* e *notifications_enabled* são considerados; os demais são ignorados.
+Somente os parâmetros *location_id*, *place*, *notifications_enabled*, *cash_mode*, *restock_mode*, *audit_enabled* e *visit_schedule* são considerados; os demais são ignorados.
 
 Não é permitido atualizar um planograma ativo, somente cadastrar um outro planograma pendente. Para tanto, ver Planogramas.
 
