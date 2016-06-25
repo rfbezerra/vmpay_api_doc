@@ -143,6 +143,7 @@ Segue um exemplo de retorno:
       "created_at": "2016-01-26T17:36:44.000-02:00",
       "updated_at": "2016-01-26T19:21:27.000-02:00",
       "location_id": 12,
+      "machine_id": 112,
       "equipment_id": 123,
       "place": "Recepção",
       "cash_mode": "cash_and_cashless",
