@@ -46,7 +46,8 @@ Exemplo:
       "restock_mode": "restock_and_cash_collect",
       "restock_strategy": "allow_pick_list_or_full",
       "notifications_enabled": true,
-      "audit_enabled": true
+      "audit_enabled": true,
+      "visit_schedule": []
     },
     {
       "id": 88,
@@ -60,7 +61,8 @@ Exemplo:
       "restock_mode": "restock_and_cash_collect",
       "restock_strategy": "allow_pick_list_or_full",
       "notifications_enabled": true,
-      "audit_enabled": true
+      "audit_enabled": true,
+      "visit_schedule": ["tuesday", "thursday"]
     },
     {
       "id": 138,
@@ -74,7 +76,8 @@ Exemplo:
       "restock_mode": "restock_and_cash_collect",
       "restock_strategy": "require_pending_pick_list",
       "notifications_enabled": true,
-      "audit_enabled": true
+      "audit_enabled": true,
+      "visit_schedule": ["monday", "wednesday", "friday"]
     }
   ]
 
@@ -147,6 +150,7 @@ Segue um exemplo de retorno:
       "restock_strategy": "allow_pick_list_or_full",
       "notifications_enabled": true,
       "audit_enabled": true,
+      "visit_schedule": ["monday", "wednesday", "friday"],
       "pending_planogram": null,
       "current_planogram": {
         "id": 189976,
@@ -476,11 +480,7 @@ Exemplo:
     "restock_strategy": "allow_pick_list_or_full",
     "notifications_enabled": true,
     "audit_enabled": true,
-    "visit_schedule": [
-      "monday",
-      "wednesday",
-      "friday"
-    ],
+    "visit_schedule": ["monday", "wednesday", "friday"],
     "current_planogram": {
       "id": 2950,
       "created_at": "2016-02-15T16:19:36.841-02:00",
@@ -630,11 +630,7 @@ Exemplo:
     "restock_strategy": "allow_pick_list_or_full",
     "notifications_enabled": false,
     "audit_enabled": true,
-    "visit_schedule": [
-      "monday",
-      "wednesday",
-      "friday"
-    ],
+    "visit_schedule": ["monday", "wednesday", "friday"],
     "current_planogram": {
       "id": 2960,
       "created_at": "2016-02-15T16:50:47.000-02:00",
