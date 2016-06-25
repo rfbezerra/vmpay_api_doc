@@ -44,6 +44,7 @@ Exemplo:
       "place": "Recepção",
       "cash_mode": "cash_and_cashless",
       "restock_mode": "restock_and_cash_collect",
+      "restock_strategy": "allow_pick_list_or_full",
       "notifications_enabled": true,
       "audit_enabled": true
     },
@@ -57,6 +58,7 @@ Exemplo:
       "place": "Hall Biblioteca",
       "cash_mode": "cash_and_cashless",
       "restock_mode": "restock_and_cash_collect",
+      "restock_strategy": "allow_pick_list_or_full",
       "notifications_enabled": true,
       "audit_enabled": true
     },
@@ -70,6 +72,7 @@ Exemplo:
       "place": "Recepção",
       "cash_mode": "cash_and_cashless",
       "restock_mode": "restock_and_cash_collect",
+      "restock_strategy": "require_pending_pick_list",
       "notifications_enabled": true,
       "audit_enabled": true
     }
@@ -141,6 +144,7 @@ Segue um exemplo de retorno:
       "place": "Recepção",
       "cash_mode": "cash_and_cashless",
       "restock_mode": "restock_and_cash_collect",
+      "restock_strategy": "allow_pick_list_or_full",
       "notifications_enabled": true,
       "audit_enabled": true,
       "pending_planogram": null,
@@ -303,6 +307,7 @@ Request::
         "place": "Recepção",
         "cash_mode": "cash_and_cashless",
         "restock_mode": "restock_and_cash_collect",
+        "restock_strategy": "allow_pick_list_or_full",
         "notifications_enabled": true,
         "audit_enabled": true,
         "visit_schedule": ["monday", "wednesday", "friday"],
@@ -387,6 +392,10 @@ Obrigatórios
     * Se o botão de reabastecimento da máquina for pressionado somente uma única vez, o sistema irá gerar um reabastecimento juntamente com uma coleta ou somente um reabastecimento dependendo da opção selecionada.
     * Se o botão for pressionado duas vezes, o sistema sempre irá gerar uma coleta.
 
+  * *restock_strategy*: estratégia de reabastecimento.
+
+    * Valores permitidos: *allow_pick_list_or_full* (padrão) ou *require_pending_pick_list* (somente por pick list).
+
   * *notifications_enabled*: enviar notificações?
   * *audit_enabled*: habilitar auditorias?
   * *visit_schedule*: array contendo os dias da Agenda de Visitas. Valores permitidos são: *sunday, monday, tuesday, wednesday, thursday, friday, saturday*.
@@ -464,6 +473,7 @@ Exemplo:
     "place": "Recepção",
     "cash_mode": "cash_and_cashless",
     "restock_mode": "restock_and_cash_collect",
+    "restock_strategy": "allow_pick_list_or_full",
     "notifications_enabled": true,
     "audit_enabled": true,
     "visit_schedule": [
@@ -591,7 +601,7 @@ Campos
 
 Ao menos um campo interno a *installation* deve ser passado.
 
-Somente os parâmetros *location_id*, *place*, *notifications_enabled*, *restock_mode*, *audit_enabled* e *visit_schedule* são considerados; os demais são ignorados.
+Somente os parâmetros *location_id*, *place*, *restock_mode*, *restock_strategy*, *notifications_enabled*, *audit_enabled* e *visit_schedule* são considerados; os demais são ignorados.
 
 Não é permitido atualizar um planograma ativo, somente cadastrar um outro planograma pendente. Para tanto, ver Planogramas.
 
@@ -617,6 +627,7 @@ Exemplo:
     "equipment_id": 314,
     "place": "Recepção 2",
     "restock_mode": "restock_and_cash_collect",
+    "restock_strategy": "allow_pick_list_or_full",
     "notifications_enabled": false,
     "audit_enabled": true,
     "visit_schedule": [
