@@ -591,7 +591,7 @@ Campos
 
 Ao menos um campo interno a *installation* deve ser passado.
 
-Somente os parâmetros *location_id*, *place*, *notifications_enabled*, *cash_mode*, *restock_mode*, *audit_enabled* e *visit_schedule* são considerados; os demais são ignorados.
+Somente os parâmetros *location_id*, *place*, *notifications_enabled*, *restock_mode*, *audit_enabled* e *visit_schedule* são considerados; os demais são ignorados.
 
 Não é permitido atualizar um planograma ativo, somente cadastrar um outro planograma pendente. Para tanto, ver Planogramas.
 
@@ -616,7 +616,6 @@ Exemplo:
     "machine_id": 612,
     "equipment_id": 314,
     "place": "Recepção 2",
-    "cash_mode": "cash_and_cashless",
     "restock_mode": "restock_and_cash_collect",
     "notifications_enabled": false,
     "audit_enabled": true,
