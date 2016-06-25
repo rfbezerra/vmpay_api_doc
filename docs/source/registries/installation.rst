@@ -481,6 +481,7 @@ Exemplo:
     "notifications_enabled": true,
     "audit_enabled": true,
     "visit_schedule": ["monday", "wednesday", "friday"],
+    "pending_planogram": null,
     "current_planogram": {
       "id": 2950,
       "created_at": "2016-02-15T16:19:36.841-02:00",
@@ -631,6 +632,7 @@ Exemplo:
     "notifications_enabled": false,
     "audit_enabled": true,
     "visit_schedule": ["monday", "wednesday", "friday"],
+    "pending_planogram": null,
     "current_planogram": {
       "id": 2960,
       "created_at": "2016-02-15T16:50:47.000-02:00",
