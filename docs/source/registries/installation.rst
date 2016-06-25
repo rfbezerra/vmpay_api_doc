@@ -627,6 +627,7 @@ Exemplo:
     "machine_id": 612,
     "equipment_id": 314,
     "place": "Recepção 2",
+    "cash_mode": "cash_and_cashless",
     "restock_mode": "restock_and_cash_collect",
     "restock_strategy": "allow_pick_list_or_full",
     "notifications_enabled": false,
