@@ -143,6 +143,7 @@ Segue um exemplo de retorno:
       "restock_mode": "restock_and_cash_collect",
       "notifications_enabled": true,
       "audit_enabled": true,
+      "pending_planogram": null,
       "current_planogram": {
         "id": 189976,
         "created_at": "2016-01-26T17:36:44.000-02:00",
