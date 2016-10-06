@@ -35,6 +35,10 @@ Resources disponíveis
    info/machine_manufacturer
    info/machine_model
    info/machine_type
+   info/eft_provider
+   info/eft_authorizer
+   info/eft_card_brand
+   info/eft_card_type
 
 .. toctree::
    :maxdepth: 1

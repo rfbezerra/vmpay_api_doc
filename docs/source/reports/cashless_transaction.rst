@@ -70,6 +70,22 @@ Os parâmetros abaixo podem ser passados como uma `query string <https://en.wiki
   * Tal produto pode ser composto (combo ou bebidas quentes) ou não (produtos vendidos por unidade).
   * `Good <https://en.wikipedia.org/wiki/Good_%28economics%29>`_ neste caso se traduz como `bem <https://pt.wikipedia.org/wiki/Bem_%28economia%29>`_.
 
+* **eft_provider_id**: o provedor de TEF das transações cashless.
+
+  * Se passado, a consulta retorna somente transações cashless desse provedor TEF.
+
+* **eft_authorizer_id**: o adquirente de TEF das transações cashless.
+
+  * Se passado, a consulta retorna somente transações cashless desse adquirente.
+
+* **eft_card_brand_id**: o cartão utilizado nas transações cashless.
+
+  * Se passado, a consulta retorna somente transações cashless desse cartão.
+
+* **eft_card_type_id**: o tipo de cartão utilizado nas transações cashless.
+
+  * Se passado, a consulta retorna somente transações cashless desse tipo de cartão.
+
 Retorno
 -------
 
@@ -86,6 +102,10 @@ Retorno
 
   * * `Good <https://en.wikipedia.org/wiki/Good_%28economics%29>`_ neste caso se traduz como `bem <https://pt.wikipedia.org/wiki/Bem_%28economia%29>`_.
 
+* **eft_provider_id**: o id do provedor de TEF das transações cashless.
+* **eft_authorizer_id**: o id do adquirente de TEF das transações cashless.
+* **eft_card_brand_id**: o id do cartão utilizado nas transações cashless.
+* **eft_card_type_id**: o id do tipo de cartão utilizado nas transações cashless.
 * **coil**: o número do item de planograma em que ocorreu a transação cashless (canaleta, seleção ou combo).
 * **transaction_value**: o valor total da transação cashless.
 * **remote_credit**: um booleano indicando se a transação foi ou não um crédito remoto.
@@ -93,6 +113,10 @@ Retorno
 * **location**: detalhes do local da transação cashless.
 * **machine**: detalhes da máquina da transação cashless.
 * **good**: detalhes do produto vendido.
+* **eft_provider**: detalhes do provedor de TEF das transações cashless.
+* **eft_authorizer**: detalhes do adquirente de TEF das transações cashless.
+* **eft_card_brand**: detalhes do cartão utilizado nas transações cashless.
+* **eft_card_type**: detalhes do tipo de cartão utilizado nas transações cashless.
 
 Segue um exemplo de retorno de consulta:
 
@@ -108,6 +132,10 @@ Segue um exemplo de retorno de consulta:
         "installation_id":4,
         "planogram_item_id":5,
         "good_id":7,
+        "eft_provider_id":1,
+        "eft_authorizer_id":1,
+        "eft_card_brand_id":21,
+        "eft_card_type_id":1,
         "coil":"1",
         "transaction_value":2.5,
         "remote_credit":false,
@@ -128,6 +156,18 @@ Segue um exemplo de retorno de consulta:
           "manufacturer_id":2,
           "name":"Product X",
           "upc_code":"333"
+        },
+        "eft_provider": {
+          "name":"Pay&Go"
+        },
+        "eft_authorizer_id": {
+          "name":"Cielo"
+        },
+        "eft_card_brand": {
+          "name": "Visa"
+        },
+        "eft_card_type": {
+          "name": "Crédito"
         }
       },
       {
@@ -139,6 +179,10 @@ Segue um exemplo de retorno de consulta:
         "installation_id":4,
         "planogram_item_id":6,
         "good_id":8,
+        "eft_provider_id":2,
+        "eft_authorizer_id":4,
+        "eft_card_brand_id":12,
+        "eft_card_type_id":2,
         "coil":"3",
         "transaction_value":2.5,
         "remote_credit":false,
@@ -159,6 +203,18 @@ Segue um exemplo de retorno de consulta:
           "manufacturer_id":3,
           "name":"Product Y",
           "upc_code":"444"
+        },
+        "eft_provider": {
+          "name":"SiTef"
+        },
+        "eft_authorizer_id": {
+          "name":"Rede"
+        },
+        "eft_card_brand": {
+          "name": "Mastercard"
+        },
+        "eft_card_type": {
+          "name": "Débito"
         }
       }
     ]
