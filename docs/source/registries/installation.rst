@@ -47,7 +47,10 @@ Exemplo:
       "restock_strategy": "allow_pick_list_or_full",
       "notifications_enabled": true,
       "audit_enabled": true,
-      "visit_schedule": []
+      "visit_schedule": [],
+      "operation_status": "green",
+      "states": ["hatched"],
+      "route_ids": [10, 68, 123]
     },
     {
       "id": 88,
@@ -63,6 +66,9 @@ Exemplo:
       "notifications_enabled": true,
       "audit_enabled": true,
       "visit_schedule": ["tuesday", "thursday"]
+      "operation_status": "yellow",
+      "states": ["audit_failure", "hatched"],
+      "route_ids": [10, 13]
     },
     {
       "id": 138,
@@ -78,6 +84,9 @@ Exemplo:
       "notifications_enabled": true,
       "audit_enabled": true,
       "visit_schedule": ["monday", "wednesday", "friday"]
+      "operation_status": "red",
+      "states": ["extended_power_loss", "hatched"],
+      "route_ids": [23]
     }
   ]
 
@@ -108,6 +117,23 @@ status  descrição
 ======  =========
 200     OK
 ======  =========
+
+* O campo *operation_status* diz respeito ao estado de operação da instalação. Os possíveis valores são os seguintes:
+
+  * *green*: Máquina operando normalmente.
+  * *yellow*: Máquina operando parcialmente.
+  * *red*: Máquina fora de operação.
+  * *grey*: Estado de operação indefinido (a máquina ainda não se comunicou, por exemplo).
+
+* O campo *states* diz respeito ao detalhamento do estado de operação da instalação. Os possíveis valores são os seguintes:
+
+  * *extended_power_loss*: Falha de energia.
+  * *no_communication*: Sem comunicação.
+  * *reader_disabled*: Fora de serviço.
+  * *pay_and_go_offline*: Cashless sem conexão com máquina ou operadora de cartões.
+  * *audit_failure*: Falha de auditoria.
+  * *weak_signal*: Sinal fraco.
+  * *hatched*: instalação comunicou pelo menos uma vez (usado para distinguir de instalações que já comunicaram mas nunca apresentaram nenhuma falha).
 
 * O campo *balance* diz respeito aos saldos da instalação:
 
@@ -152,6 +178,9 @@ Segue um exemplo de retorno:
       "notifications_enabled": true,
       "audit_enabled": true,
       "visit_schedule": ["monday", "wednesday", "friday"],
+      "operation_status": "red",
+      "states": ["extended_power_loss", "hatched"],
+      "route_ids": [10, 13],
       "pending_planogram": null,
       "current_planogram": {
         "id": 189976,
@@ -482,6 +511,9 @@ Exemplo:
     "notifications_enabled": true,
     "audit_enabled": true,
     "visit_schedule": ["monday", "wednesday", "friday"],
+    "operation_status": "grey",
+    "states": [],
+    "route_ids": [],
     "pending_planogram": null,
     "current_planogram": {
       "id": 2950,
@@ -634,6 +666,9 @@ Exemplo:
     "notifications_enabled": false,
     "audit_enabled": true,
     "visit_schedule": ["monday", "wednesday", "friday"],
+    "operation_status": "green",
+    "states": ["hatched"],
+    "route_ids": [23],
     "pending_planogram": null,
     "current_planogram": {
       "id": 2960,
