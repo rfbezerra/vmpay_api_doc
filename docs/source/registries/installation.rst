@@ -768,3 +768,4 @@ Resources aninhadas
    installations/pick_list
    installations/planogram
    installations/audit
+   installations/remote_command
