@@ -21,6 +21,9 @@ machine_id       id da máquina     sim
 installation_id  id da instalação  sim
 ===============  ================  ===========
 
+É possível filtrar as pick lists com uma *query string*. Veja na API do
+`relatório de pick lists <../../reports/pick_list.html>`_ os campos possíveis.
+
 Retorno
 -------
 
@@ -37,331 +40,25 @@ Exemplo::
       "id": 4164,
       "created_at": "2015-11-09T07:49:34.000-02:00",
       "updated_at": "2015-11-09T12:40:13.000-02:00",
+      "installation_id": 857,
       "planogram_id": 2477,
+      "group_id": 1,
+      "distribution_center_id": 1,
+      "machine_id": 49
       "pending": false,
-      "url": "http://localhost:4000/api/v1/machines/49/installations/857/pick_lists/4164",
-      "items": [
-        {
-          "id": 167188,
-          "planogram_item_id": 93477,
-          "quantity": 8
-        },
-        {
-          "id": 167190,
-          "planogram_item_id": 93479,
-          "quantity": 3
-        },
-        {
-          "id": 167191,
-          "planogram_item_id": 93480,
-          "quantity": 3
-        },
-        {
-          "id": 167192,
-          "planogram_item_id": 93481,
-          "quantity": 2
-        },
-        {
-          "id": 167193,
-          "planogram_item_id": 93482,
-          "quantity": 1
-        },
-        {
-          "id": 167194,
-          "planogram_item_id": 93483,
-          "quantity": 1
-        },
-        {
-          "id": 167195,
-          "planogram_item_id": 93484,
-          "quantity": 3
-        },
-        {
-          "id": 167196,
-          "planogram_item_id": 93485,
-          "quantity": 4
-        },
-        {
-          "id": 167197,
-          "planogram_item_id": 93486,
-          "quantity": 4
-        },
-        {
-          "id": 167199,
-          "planogram_item_id": 93488,
-          "quantity": 3
-        },
-        {
-          "id": 167200,
-          "planogram_item_id": 93489,
-          "quantity": 1
-        },
-        {
-          "id": 167201,
-          "planogram_item_id": 93490,
-          "quantity": 5
-        },
-        {
-          "id": 167202,
-          "planogram_item_id": 93491,
-          "quantity": 2
-        },
-        {
-          "id": 167203,
-          "planogram_item_id": 93492,
-          "quantity": 8
-        },
-        {
-          "id": 167204,
-          "planogram_item_id": 93493,
-          "quantity": 2
-        },
-        {
-          "id": 167205,
-          "planogram_item_id": 93494,
-          "quantity": 8
-        },
-        {
-          "id": 167206,
-          "planogram_item_id": 93495,
-          "quantity": 1
-        },
-        {
-          "id": 167207,
-          "planogram_item_id": 93496,
-          "quantity": 1
-        },
-        {
-          "id": 167208,
-          "planogram_item_id": 93497,
-          "quantity": 3
-        },
-        {
-          "id": 167209,
-          "planogram_item_id": 93498,
-          "quantity": 6
-        },
-        {
-          "id": 167210,
-          "planogram_item_id": 93499,
-          "quantity": 6
-        },
-        {
-          "id": 167211,
-          "planogram_item_id": 93500,
-          "quantity": 1
-        },
-        {
-          "id": 167212,
-          "planogram_item_id": 93501,
-          "quantity": 4
-        },
-        {
-          "id": 167213,
-          "planogram_item_id": 93502,
-          "quantity": 1
-        },
-        {
-          "id": 167214,
-          "planogram_item_id": 93503,
-          "quantity": 1
-        },
-        {
-          "id": 167216,
-          "planogram_item_id": 93505,
-          "quantity": 1
-        },
-        {
-          "id": 167218,
-          "planogram_item_id": 93507,
-          "quantity": 1
-        },
-        {
-          "id": 167219,
-          "planogram_item_id": 93508,
-          "quantity": 3
-        },
-        {
-          "id": 167220,
-          "planogram_item_id": 93509,
-          "quantity": 1
-        },
-        {
-          "id": 167221,
-          "planogram_item_id": 93510,
-          "quantity": 2
-        },
-        {
-          "id": 167222,
-          "planogram_item_id": 93511,
-          "quantity": 2
-        },
-        {
-          "id": 167224,
-          "planogram_item_id": 93513,
-          "quantity": 2
-        },
-        {
-          "id": 167225,
-          "planogram_item_id": 93514,
-          "quantity": 1
-        },
-        {
-          "id": 167226,
-          "planogram_item_id": 93515,
-          "quantity": 1
-        }
-      ]
+      "url": "http://vmpay.vertitecnologia.com.br/api/v1/machines/49/installations/857/pick_lists/4164"
     },
     {
       "id": 4302,
       "created_at": "2015-11-12T12:51:04.000-02:00",
       "updated_at": "2015-11-12T15:46:32.000-02:00",
+      "installation_id": 857,
       "planogram_id": 2563,
+      "group_id": 1,
+      "distribution_center_id": 1,
+      "machine_id": 49
       "pending": false,
-      "url": "http://localhost:4000/api/v1/machines/49/installations/857/pick_lists/4302",
-      "items": [
-        {
-          "id": 172498,
-          "planogram_item_id": 96595,
-          "quantity": 2
-        },
-        {
-          "id": 172499,
-          "planogram_item_id": 96596,
-          "quantity": 3
-        },
-        {
-          "id": 172500,
-          "planogram_item_id": 96597,
-          "quantity": 1
-        },
-        {
-          "id": 172502,
-          "planogram_item_id": 96599,
-          "quantity": 1
-        },
-        {
-          "id": 172503,
-          "planogram_item_id": 96600,
-          "quantity": 1
-        },
-        {
-          "id": 172504,
-          "planogram_item_id": 96601,
-          "quantity": 4
-        },
-        {
-          "id": 172505,
-          "planogram_item_id": 96602,
-          "quantity": 1
-        },
-        {
-          "id": 172511,
-          "planogram_item_id": 96608,
-          "quantity": 1
-        },
-        {
-          "id": 172513,
-          "planogram_item_id": 96610,
-          "quantity": 4
-        },
-        {
-          "id": 172515,
-          "planogram_item_id": 96612,
-          "quantity": 1
-        },
-        {
-          "id": 172516,
-          "planogram_item_id": 96613,
-          "quantity": 2
-        },
-        {
-          "id": 172518,
-          "planogram_item_id": 96615,
-          "quantity": 3
-        },
-        {
-          "id": 172519,
-          "planogram_item_id": 96616,
-          "quantity": 2
-        },
-        {
-          "id": 172520,
-          "planogram_item_id": 96617,
-          "quantity": 4
-        },
-        {
-          "id": 172521,
-          "planogram_item_id": 96618,
-          "quantity": 2
-        },
-        {
-          "id": 172522,
-          "planogram_item_id": 96619,
-          "quantity": 2
-        },
-        {
-          "id": 172524,
-          "planogram_item_id": 96621,
-          "quantity": 1
-        },
-        {
-          "id": 172525,
-          "planogram_item_id": 96622,
-          "quantity": 2
-        },
-        {
-          "id": 172526,
-          "planogram_item_id": 96623,
-          "quantity": 2
-        },
-        {
-          "id": 172528,
-          "planogram_item_id": 96625,
-          "quantity": 1
-        },
-        {
-          "id": 172529,
-          "planogram_item_id": 96626,
-          "quantity": 2
-        },
-        {
-          "id": 172530,
-          "planogram_item_id": 96627,
-          "quantity": 1
-        },
-        {
-          "id": 172531,
-          "planogram_item_id": 96628,
-          "quantity": 2
-        },
-        {
-          "id": 172532,
-          "planogram_item_id": 96629,
-          "quantity": 4
-        },
-        {
-          "id": 172533,
-          "planogram_item_id": 96630,
-          "quantity": 4
-        },
-        {
-          "id": 172534,
-          "planogram_item_id": 96631,
-          "quantity": 1
-        },
-        {
-          "id": 172535,
-          "planogram_item_id": 96632,
-          "quantity": 3
-        },
-        {
-          "id": 172536,
-          "planogram_item_id": 96633,
-          "quantity": 3
-        }
-      ]
+      "url": "http://vmpay.vertitecnologia.com.br/api/v1/machines/49/installations/857/pick_lists/4302"
     }
   ]
 
@@ -401,177 +98,37 @@ Exemplo::
     "created_at": "2015-11-09T07:49:34.000-02:00",
     "updated_at": "2015-11-09T12:40:13.000-02:00",
     "planogram_id": 2477,
+    "group_id": 1,
+    "distribution_center_id": 1,
     "pending": false,
     "items": [
       {
         "id": 167188,
         "planogram_item_id": 93477,
-        "quantity": 8
+        "quantity": 8,
+        "ignored": false,
+        "good_id": 2229
       },
       {
         "id": 167190,
         "planogram_item_id": 93479,
-        "quantity": 3
+        "quantity": 3,
+        "ignored": false,
+        "good_id": 543
       },
       {
         "id": 167191,
         "planogram_item_id": 93480,
-        "quantity": 3
+        "quantity": 3,
+        "ignored": false,
+        "good_id": 533
       },
       {
         "id": 167192,
         "planogram_item_id": 93481,
-        "quantity": 2
-      },
-      {
-        "id": 167193,
-        "planogram_item_id": 93482,
-        "quantity": 1
-      },
-      {
-        "id": 167194,
-        "planogram_item_id": 93483,
-        "quantity": 1
-      },
-      {
-        "id": 167195,
-        "planogram_item_id": 93484,
-        "quantity": 3
-      },
-      {
-        "id": 167196,
-        "planogram_item_id": 93485,
-        "quantity": 4
-      },
-      {
-        "id": 167197,
-        "planogram_item_id": 93486,
-        "quantity": 4
-      },
-      {
-        "id": 167199,
-        "planogram_item_id": 93488,
-        "quantity": 3
-      },
-      {
-        "id": 167200,
-        "planogram_item_id": 93489,
-        "quantity": 1
-      },
-      {
-        "id": 167201,
-        "planogram_item_id": 93490,
-        "quantity": 5
-      },
-      {
-        "id": 167202,
-        "planogram_item_id": 93491,
-        "quantity": 2
-      },
-      {
-        "id": 167203,
-        "planogram_item_id": 93492,
-        "quantity": 8
-      },
-      {
-        "id": 167204,
-        "planogram_item_id": 93493,
-        "quantity": 2
-      },
-      {
-        "id": 167205,
-        "planogram_item_id": 93494,
-        "quantity": 8
-      },
-      {
-        "id": 167206,
-        "planogram_item_id": 93495,
-        "quantity": 1
-      },
-      {
-        "id": 167207,
-        "planogram_item_id": 93496,
-        "quantity": 1
-      },
-      {
-        "id": 167208,
-        "planogram_item_id": 93497,
-        "quantity": 3
-      },
-      {
-        "id": 167209,
-        "planogram_item_id": 93498,
-        "quantity": 6
-      },
-      {
-        "id": 167210,
-        "planogram_item_id": 93499,
-        "quantity": 6
-      },
-      {
-        "id": 167211,
-        "planogram_item_id": 93500,
-        "quantity": 1
-      },
-      {
-        "id": 167212,
-        "planogram_item_id": 93501,
-        "quantity": 4
-      },
-      {
-        "id": 167213,
-        "planogram_item_id": 93502,
-        "quantity": 1
-      },
-      {
-        "id": 167214,
-        "planogram_item_id": 93503,
-        "quantity": 1
-      },
-      {
-        "id": 167216,
-        "planogram_item_id": 93505,
-        "quantity": 1
-      },
-      {
-        "id": 167218,
-        "planogram_item_id": 93507,
-        "quantity": 1
-      },
-      {
-        "id": 167219,
-        "planogram_item_id": 93508,
-        "quantity": 3
-      },
-      {
-        "id": 167220,
-        "planogram_item_id": 93509,
-        "quantity": 1
-      },
-      {
-        "id": 167221,
-        "planogram_item_id": 93510,
-        "quantity": 2
-      },
-      {
-        "id": 167222,
-        "planogram_item_id": 93511,
-        "quantity": 2
-      },
-      {
-        "id": 167224,
-        "planogram_item_id": 93513,
-        "quantity": 2
-      },
-      {
-        "id": 167225,
-        "planogram_item_id": 93514,
-        "quantity": 1
-      },
-      {
-        "id": 167226,
-        "planogram_item_id": 93515,
-        "quantity": 1
+        "quantity": 2,
+        "ignored": false,
+        "good_id": 533
       }
     ]
   }

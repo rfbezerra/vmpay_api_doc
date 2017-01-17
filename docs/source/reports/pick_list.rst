@@ -12,11 +12,17 @@ Listar
 Filtros
 -------
 
-O parâmetro abaixo pode ser passado como uma `query string <https://en.wikipedia.org/wiki/Query_string>`_.
+Os parâmetros abaixo podem ser passados como uma
+`query string <https://en.wikipedia.org/wiki/Query_string>`_. Datas devem ser
+passadas no formato `ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_.
 
 * **pending_only**: pode ser *true* ou *false*. Se for *true*, apenas as pick lists pendentes serão listadas.
 
   * Caso não seja passado, é considerado *false*.
+
+* **updated_since**: filtra pick lists atualizadas *a partir* da data informada.
+
+* **updated_until**: filtra pick lists atualizadas *até* a data informada.
 
 Retorno
 -------
@@ -29,9 +35,10 @@ Retorno
 * **installation_id**: o id da instalação da pick list
 * **planogram_id**: o id do planograma da pick list
 * **group_id**: o id do grupo da pick list
+* **distribution_center_id**: o id do centro de distribuição
+* **machine_id**: o id da máquina
 * **pending**: *true* se pick list estiver pendente, *false* se não estiver
 * **url**: o endereço da pick list no VMpay
-* **items**: detalhes dos itens da pick list
 
 Segue um exemplo de retorno de consulta:
 
@@ -45,9 +52,10 @@ Segue um exemplo de retorno de consulta:
       "installation_id": 363,
       "planogram_id": 1046,
       "group_id": 1,
+      "distribution_center_id": 1,
+      "machine_id": 235,
       "pending": false,
-      "url": "http://vmpay.vertitecnologia.com.br/api/v1/machines/235/installations/363/pick_lists/2692",
-      "items": []
+      "url": "http://vmpay.vertitecnologia.com.br/api/v1/machines/235/installations/363/pick_lists/2692"
     },
     {
       "id": 5248,
@@ -56,30 +64,10 @@ Segue um exemplo de retorno de consulta:
       "installation_id": 1170,
       "planogram_id": 3172,
       "group_id": 1,
+      "distribution_center_id": 1,
+      "machine_id": 643,
       "pending": false,
-      "url": "http://vmpay.vertitecnologia.com.br/api/v1/machines/643/installations/1170/pick_lists/5248",
-      "items": [
-        {
-          "id": 208644,
-          "planogram_item_id": 120523,
-          "quantity": 30
-        },
-        {
-          "id": 208645,
-          "planogram_item_id": 120524,
-          "quantity": 30
-        },
-        {
-          "id": 208647,
-          "planogram_item_id": 120526,
-          "quantity": 30
-        },
-        {
-          "id": 208648,
-          "planogram_item_id": 120527,
-          "quantity": 30
-        }
-      ]
+      "url": "http://vmpay.vertitecnologia.com.br/api/v1/machines/643/installations/1170/pick_lists/5248"
     },
     {
       "id": 5560,
@@ -88,19 +76,9 @@ Segue um exemplo de retorno de consulta:
       "installation_id": 1170,
       "planogram_id": 3172,
       "group_id": 1,
+      "distribution_center_id": 1,
+      "machine_id": 643,
       "pending": false,
-      "url": "http://vmpay.vertitecnologia.com.br/api/v1/machines/643/installations/1170/pick_lists/5560",
-      "items": [
-        {
-          "id": 220561,
-          "planogram_item_id": 120524,
-          "quantity": 30
-        },
-        {
-          "id": 220564,
-          "planogram_item_id": 120527,
-          "quantity": 30
-        }
-      ]
+      "url": "http://vmpay.vertitecnologia.com.br/api/v1/machines/643/installations/1170/pick_lists/5560"
     }
   ]
