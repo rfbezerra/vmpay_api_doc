@@ -12,17 +12,11 @@ Listar
 Filtros
 -------
 
-Os parâmetros abaixo podem ser passados como uma `query string <https://en.wikipedia.org/wiki/Query_string>`_. Mais de um filtro pode ser passado na mesma consulta.
+Os parâmetros abaixo podem ser passados como uma
+`query string <https://en.wikipedia.org/wiki/Query_string>`_. Mais de um filtro
+pode ser passado na mesma consulta.
 
-* **page**: uma consulta pode retornar milhares de registros. Para evitar sobrecarga no servidor e demora no cliente, usa-se paginação. Este parâmetro indica a página a ser buscada pela consulta.
-
-  * Caso não seja passado, é considerado 1.
-
-* **per_page**: o número de registros por página.
-
-  * Caso não seja passado, é considerado 100.
-  * Pode ser até 1000 no máximo.
-  * Caso seja passado mais que 1000, é retornado erro com o código HTTP 400 (*bad request*).
+Este serviço suporta `paginação <../overview.html#paginacao>`_.
 
 * **start_date**: a data de início das transações cashless.
 

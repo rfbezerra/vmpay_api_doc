@@ -19,6 +19,23 @@ Exemplo::
 
     http://vmpay.vertitecnologia.com.br/api/v1/caminho/para/api?access_token=837e068fbb4c1e1f
 
+Paginação
+=========
+
+Serviços que retornam muitos registros podem usar paginação para evitar
+sobrecarga do servidor e demora no cliente. Quando habilitada os seguintes
+parâmetros estarão disponíveis:
+
+* **page**: a página a ser buscada pela consulta.
+
+  * Caso não seja passado, é considerado 1.
+
+* **per_page**: o número de registros por página.
+
+  * Caso não seja passado, é considerado 100.
+  * Pode ser até 1000 no máximo.
+  * Caso seja passado mais que 1000, é retornado erro com o código HTTP 400 (*bad request*).
+
 Exemplo de requisição válida
 ============================
 
