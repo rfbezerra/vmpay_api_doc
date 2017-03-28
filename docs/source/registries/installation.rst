@@ -794,6 +794,42 @@ status      descrição                             response body
 404         máquina ou instalação não encontrada  (vazio)
 ==========  ====================================  ====================================================
 
+Reabastecer manualmente
+=======================
+
+Efetua o reabastecimento da pick list atualmente pendente, caso exista e a
+operação seja permitida, isto é, a estratégia de reabastecimento seja
+*require_pending_pick_list* (somente por pick list).
+
+::
+
+  POST /api/v1/machines/[machine_id]/installations/[id]/restock
+
+Parâmetros de URL
+-----------------
+
+==========  ================  ===========
+parâmetro   descrição         obrigatório
+==========  ================  ===========
+machine_id  id da máquina     sim
+id          id da instalação  sim
+==========  ================  ===========
+
+Campos
+------
+
+Nenhum.
+
+Retorno
+-------
+
+======  ======================================
+status  descrição
+======  ======================================
+200     Reabastecimento criado com sucesso
+422     Não foi possível criar reabastecimento
+======  ======================================
+
 Resources aninhadas
 ===================
 
