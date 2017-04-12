@@ -172,7 +172,7 @@ Envia um comando para execução remota.
 
 ::
 
-  POST /api/v1/machines/[machine_id]/installations/[installation_id]/remote_command
+  POST /api/v1/machines/[machine_id]/installations/[installation_id]/remote_commands
 
 Parâmetros de URL:
 ------------------
