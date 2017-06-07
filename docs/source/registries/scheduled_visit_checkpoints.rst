@@ -62,6 +62,10 @@ campos:
 
   - **entered_vacant_amount**: saldo informado para o item no VMpay Visitor
 
+  - **returned_amounts**: um array com até 4 elementos contendo os valores
+    retornados na seguinte ordem: "Retirado: danificado", "Retirado: vencido",
+    "Sobra: troca de grade" e "Sobra: pick list".
+
 * **custom_values**: lista de campos customizados em que cada elemento contém os
   seguintes campos:
 
@@ -101,25 +105,29 @@ Exemplo:
         "planogram_item_id": 385102,
         "capacity": 10.0,
         "expected_vacant_amount": 6.0,
-        "entered_vacant_amount":7.0
+        "entered_vacant_amount": 7.0,
+        "returned_amounts": [0.0, 0.0, 0.0, 4.0]
       },
       {
         "planogram_item_id": 385103,
         "capacity": 10.0,
         "expected_vacant_amount": 0.0,
-        "entered_vacant_amount": 0.0
+        "entered_vacant_amount": 0.0,
+        "returned_amounts": []
       },
       {
         "planogram_item_id": 385104,
         "capacity": 13.0,
         "expected_vacant_amount": 5.0,
-        "entered_vacant_amount": 2.0
+        "entered_vacant_amount": 2.0,
+        "returned_amounts": [1.0]
       },
       {
         "planogram_item_id": 385105,
         "capacity": 10.0,
         "expected_vacant_amount": 0.0,
-        "entered_vacant_amount": 8.0
+        "entered_vacant_amount": 8.0,
+        "returned_amounts": [1.0, 1.0, 0.0, 1.0]
       }
     ],
     "custom_values": [
