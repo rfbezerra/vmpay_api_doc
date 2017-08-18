@@ -48,6 +48,7 @@ Resources disponíveis
    :caption: Relatórios
 
    reports/alert
-   reports/cashless_transaction
+   reports/session
    reports/pick_list
+   reports/cashless_transaction
    reports/vend
